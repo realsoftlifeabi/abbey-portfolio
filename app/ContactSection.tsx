@@ -25,7 +25,7 @@ export const ContactSection = () => (
         </Link>
       </Button>
       <Button asChild size="lg" className="rounded-full px-6 py-4">
-        <Link href="mailto:support@designsynchrony.com.ng">Email Me</Link>
+        <Link href="mailto:assistant.abbey@gmail.com">Email Me</Link>
       </Button>
       <Button variant="secondary" asChild size="lg" className="rounded-full px-6 py-4">
         <Link href="https://www.upwork.com/freelancers/~01xxxxxxxxxxxxxxxx">

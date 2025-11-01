@@ -84,11 +84,11 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Get in Touch</h3>
             <div className="space-y-3">
               <a
-                href="mailto:support@designsynchrony.com.ng"
+                href="mailto:assistant.abbey@gmail.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>support@designsynchrony.com.ng</span>
+                <span>assistant.abbey@gmail.com</span>
               </a>
               <div className="flex gap-4 mt-4">
                 {footerLinks.social.map((link) => {
