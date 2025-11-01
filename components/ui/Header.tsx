@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Moon, Sun, Rocket } from 'lucide-react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { Button } from './button';
 
@@ -21,9 +21,9 @@ export default function Header() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/#process', label: 'Process' },
-    { href: '/#testimonials', label: 'Testimonials' },
+    { href: '/portfolio', label: 'Work' },
+    { href: '/#about', label: 'About' },
+    { href: '/#services', label: 'Services' },
   ];
 
   return (
@@ -37,12 +37,12 @@ export default function Header() {
       <div className="flex items-center justify-between max-w-7xl mx-auto px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Rocket className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform">
+            AS
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-bold text-foreground">LiftOff</span>
-            <span className="text-xs text-muted-foreground">by Abiodun Sanni</span>
+            <span className="text-lg font-bold text-foreground">Abiodun Sanni</span>
+            <span className="text-xs text-muted-foreground">Product Designer & Developer</span>
           </div>
         </Link>
 
@@ -69,7 +69,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <Button asChild size="sm" className="bg-liftoff-blue hover:bg-liftoff-blue/90">
-            <Link href="#contact">Book a LiftOff Audit</Link>
+            <Link href="#contact">Get In Touch</Link>
           </Button>
         </nav>
 
@@ -108,7 +108,7 @@ export default function Header() {
             ))}
             <Button asChild className="bg-liftoff-blue hover:bg-liftoff-blue/90 w-full">
               <Link href="#contact" onClick={() => setIsOpen(false)}>
-                Book a LiftOff Audit
+                Get In Touch
               </Link>
             </Button>
           </div>

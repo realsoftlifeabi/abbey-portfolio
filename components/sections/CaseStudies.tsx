@@ -30,14 +30,14 @@ export function CaseStudies({ projects }: CaseStudiesProps) {
             variants={staggerItem}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            Featured Launch Sprints
+            Featured Projects
           </motion.h2>
           <motion.p
             variants={staggerItem}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            From fintech to AI dashboards—see how LiftOff transforms ideas into launch-ready
-            products.
+            From fintech to AI dashboards—transforming complex ideas into intuitive,
+            conversion-focused products.
           </motion.p>
         </motion.div>
 

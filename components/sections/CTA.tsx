@@ -24,11 +24,11 @@ export function CTA() {
             <Rocket className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Ready to Launch Your SaaS?
+            Let&apos;s Build Something Great
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Book a free 30-minute LiftOff Audit. We’ll review your positioning, identify conversion
-            opportunities, and map your 7-day sprint.
+            Have a project in mind? Let&apos;s chat. I&apos;ll review your goals, identify
+            opportunities, and help you find the best path forward.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

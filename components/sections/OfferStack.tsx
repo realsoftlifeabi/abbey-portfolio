@@ -12,58 +12,58 @@ export function OfferStack() {
     {
       id: 'sprint',
       icon: Rocket,
-      title: 'LiftOff Launch Sprint',
+      title: 'Product Design & Development',
       price: '₦750k / $1.2k',
       description:
-        'Get your SaaS launch-ready in 7 days with strategy-backed design and production-grade Next.js build.',
+        'End-to-end product design and development from strategy to launch. Get your SaaS or web app production-ready with Next.js.',
       features: [
-        'Discovery workshop & messaging refinement',
-        'Hero + 4 supporting sections',
-        'Responsive Next.js build with TypeScript',
+        'Discovery workshop & product strategy',
+        'Complete UX/UI design system',
+        'Production-grade Next.js/React build',
         'Light/dark theme implementation',
         'Analytics & SEO setup',
         '30-day post-launch support',
       ],
-      timeline: '7 days',
-      cta: 'Start Your Sprint',
+      timeline: '1-2 weeks',
+      cta: 'Start a Project',
       featured: true,
     },
     {
       id: 'retainer',
       icon: TrendingUp,
-      title: 'Conversion Optimization Retainer',
+      title: 'Design & Development Retainer',
       price: '₦250k / $400/mo',
       description:
-        'Bi-weekly CRO experiments, heatmap analysis, and strategic recommendations to maximize conversions.',
+        'Ongoing design and development support with continuous improvements, feature development, and optimization.',
       features: [
-        'Bi-weekly A/B testing experiments',
-        'Heatmap & session recording review',
-        'CTA copy testing & optimization',
-        'Monthly performance reports',
-        'Strategic conversion recommendations',
+        'Weekly design & development cycles',
+        'Feature development & iterations',
+        'Performance & conversion optimization',
+        'Monthly progress reports',
+        'Strategic product recommendations',
         'Priority support channel',
       ],
       timeline: 'Monthly',
-      cta: 'Start Optimizing',
+      cta: 'Get Started',
       featured: false,
     },
     {
-      id: 'case-study',
+      id: 'consulting',
       icon: FileText,
-      title: 'Case Study Production',
+      title: 'Product Strategy & Consulting',
       price: '₦180k / $300',
       description:
-        'Transform your project into a compelling case study with research, copywriting, and MDX integration.',
+        'Strategic guidance for your product development, UX audits, and conversion optimization recommendations.',
       features: [
-        'Research interview & discovery',
-        'Compelling narrative copywriting',
-        'Custom visuals & mockups',
-        'MDX integration into portfolio',
-        'Schema markup for SEO',
-        '2-3 week turnaround',
+        'Product & UX audit sessions',
+        'Strategic roadmap planning',
+        'Competitive analysis & insights',
+        'Conversion optimization strategy',
+        'Design system recommendations',
+        'Detailed action plan deliverable',
       ],
-      timeline: '2-3 weeks',
-      cta: 'Request Case Study',
+      timeline: '1-2 weeks',
+      cta: 'Book Consultation',
       featured: false,
     },
   ];
@@ -82,14 +82,14 @@ export function OfferStack() {
             variants={staggerItem}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            Choose Your Launch Path
+            How I Can Help
           </motion.h2>
           <motion.p
             variants={staggerItem}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            Productized services designed for startup speed. No bloated proposals, just clear
-            outcomes.
+            Flexible engagement models designed for startup speed. Clear scope, transparent pricing,
+            and measurable outcomes.
           </motion.p>
         </motion.div>
 

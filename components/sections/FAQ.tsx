@@ -33,7 +33,7 @@ export function FAQ() {
             variants={staggerItem}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            Everything you need to know about the LiftOff Launch Sprint.
+            Common questions about working together and my process.
           </motion.p>
         </motion.div>
 

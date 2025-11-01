@@ -2,6 +2,7 @@ import { getAllProjects } from '@/lib/projects';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
 import { Hero } from '@/components/sections/Hero';
+import { About } from '@/components/sections/About';
 import { OfferStack } from '@/components/sections/OfferStack';
 import { Process } from '@/components/sections/Process';
 import { CaseStudies } from '@/components/sections/CaseStudies';
@@ -17,6 +18,7 @@ export default async function HomePage() {
       <Header />
       <main>
         <Hero />
+        <About />
         <CaseStudies projects={projects} />
         <OfferStack />
         <Process />

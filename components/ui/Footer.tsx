@@ -1,20 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import { Rocket, Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { label: 'LiftOff Launch Sprint', href: '/#services' },
-      { label: 'Conversion Retainer', href: '/#services' },
-      { label: 'Case Study Production', href: '/#services' },
+      { label: 'Product Design & Development', href: '/#services' },
+      { label: 'Design & Development Retainer', href: '/#services' },
+      { label: 'Product Strategy & Consulting', href: '/#services' },
     ],
-    company: [
+    work: [
       { label: 'Portfolio', href: '/portfolio' },
-      { label: 'Process', href: '/#process' },
+      { label: 'About', href: '/#about' },
       { label: 'Testimonials', href: '/#testimonials' },
     ],
     social: [
@@ -31,17 +31,17 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <Link href="/" className="flex items-center gap-2 group mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center">
-                <Rocket className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center text-white font-bold text-lg">
+                AS
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground">LiftOff</span>
-                <span className="text-xs text-muted-foreground">by Abiodun Sanni</span>
+                <span className="text-lg font-bold text-foreground">Abiodun Sanni</span>
+                <span className="text-xs text-muted-foreground">Product Designer & Developer</span>
               </div>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Launch conversion-ready SaaS pages in 7 days with strategy-backed design and
-              production-grade Next.js execution.
+              Creating conversion-focused digital experiences for startups and SaaS companies.
+              Strategy-backed design meets production-grade development.
             </p>
           </div>
 
@@ -62,11 +62,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Work */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="font-semibold text-foreground mb-4">Work</h3>
             <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
+              {footerLinks.work.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -114,11 +114,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} LiftOff by Abiodun Sanni. All rights reserved.
+            © {currentYear} Abiodun Sanni. All rights reserved.
           </p>
           <div className="flex gap-6">
             <span className="text-xs text-muted-foreground">Built with Next.js + Tailwind</span>
-            <span className="text-xs text-muted-foreground">7-Day Launch Sprint</span>
+            <span className="text-xs text-muted-foreground">Founder of LiftOff</span>
           </div>
         </div>
       </div>

@@ -8,10 +8,10 @@ import { staggerContainer, staggerItem } from '@/lib/motion-variants';
 
 export function Hero() {
   const proofChips = [
-    '7-Day Launch Sprint',
-    'Production-Grade Next.js',
-    'Strategy-Backed Design',
-    '100% Success Score',
+    'Product Design & Development',
+    'SaaS & Fintech Specialist',
+    'Founder of LiftOff',
+    'Full-Stack Expertise',
   ];
 
   return (
@@ -51,7 +51,7 @@ export function Hero() {
           <motion.div variants={staggerItem} className="flex justify-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-liftoff-blue/10 border border-liftoff-blue/20 text-liftoff-blue dark:bg-liftoff-blue/20 dark:border-liftoff-blue/30">
               <Rocket className="w-4 h-4" />
-              <span className="text-sm font-medium">LiftOff Launch System</span>
+              <span className="text-sm font-medium">Available for Projects</span>
             </div>
           </motion.div>
 
@@ -60,10 +60,10 @@ export function Hero() {
             variants={staggerItem}
             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-tight"
           >
-            Launch Conversion-Ready
+            Hi, I&apos;m Abiodun Sanni
             <br />
             <span className="bg-gradient-to-r from-liftoff-blue to-liftoff-orange bg-clip-text text-transparent">
-              SaaS Pages in 7 Days
+              Product Designer & Developer
             </span>
           </motion.h1>
 
@@ -72,8 +72,9 @@ export function Hero() {
             variants={staggerItem}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Strategy-backed design meets production-grade Next.js execution. Purpose-built for
-            startup founders who need speed, clarity, and conversion.
+            I create conversion-focused digital experiences for startups and SaaS companies. From
+            strategy and design to production-grade code, I bring ideas to life with clarity, speed,
+            and precision.
           </motion.p>
 
           {/* Proof Chips */}
@@ -101,7 +102,7 @@ export function Hero() {
             >
               <Link href="#contact">
                 <Zap className="w-5 h-5 mr-2" />
-                Book a LiftOff Audit
+                Start a Conversation
               </Link>
             </Button>
             <Button
@@ -110,13 +111,13 @@ export function Hero() {
               variant="outline"
               className="border-2 border-liftoff-blue text-liftoff-blue hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
             >
-              <Link href="/portfolio">View Launch Sprint Work</Link>
+              <Link href="/portfolio">View My Work</Link>
             </Button>
           </motion.div>
 
           {/* Social Proof */}
           <motion.div variants={staggerItem} className="pt-12">
-            <p className="text-sm text-muted-foreground mb-4">Trusted by founders at</p>
+            <p className="text-sm text-muted-foreground mb-4">Worked with teams at</p>
             <div className="flex flex-wrap justify-center gap-8 opacity-60">
               {['FI Options', 'Fin-Sync', 'Portal Apply', 'Design Synchrony'].map((company) => (
                 <span key={company} className="text-sm font-medium text-foreground">

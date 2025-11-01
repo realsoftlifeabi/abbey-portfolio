@@ -58,13 +58,14 @@ export function Process() {
             variants={staggerItem}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            The LiftOff Process
+            My Approach
           </motion.h2>
           <motion.p
             variants={staggerItem}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            From strategy to launch in 7 days. Transparent, collaborative, and outcome-focused.
+            From strategy to launch with speed and precision. Transparent, collaborative, and
+            outcome-focused at every step.
           </motion.p>
         </motion.div>
 
@@ -140,12 +141,12 @@ export function Process() {
           transition={{ delay: 0.5 }}
           className="text-center mt-16"
         >
-          <p className="text-muted-foreground mb-4">Ready to start your 7-day sprint?</p>
+          <p className="text-muted-foreground mb-4">Ready to bring your product to life?</p>
           <a
             href="#contact"
             className="inline-block px-8 py-3 bg-liftoff-blue hover:bg-liftoff-blue/90 text-white font-medium rounded-full transition-colors"
           >
-            Book Your Discovery Call
+            Let&apos;s Talk About Your Project
           </a>
         </motion.div>
       </div>

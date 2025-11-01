@@ -14,20 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'LiftOff by Abiodun Sanni | Launch SaaS Landing Pages in 7 Days',
+  title: 'Abiodun Sanni | Product Designer & Developer',
   description:
-    'LiftOff gets your startup launch-ready in 7 days with strategy-backed design and production-grade Next.js execution. Specializing in SaaS, fintech, and AI landing pages.',
+    'Product designer and full-stack developer specializing in SaaS, fintech, and AI products. Founder of LiftOff. Creating conversion-focused digital experiences with strategy-backed design and production-grade code.',
   keywords: [
-    'landing page designer',
-    'SaaS landing page',
+    'product designer',
+    'full-stack developer',
+    'SaaS design',
     'startup design',
     'Next.js developer',
-    'conversion optimization',
+    'UX design',
     'fintech design',
+    'Abiodun Sanni',
   ],
   openGraph: {
-    title: 'LiftOff by Abiodun Sanni',
-    description: 'Launch conversion-ready SaaS pages in 7 days',
+    title: 'Abiodun Sanni | Product Designer & Developer',
+    description: 'Creating conversion-focused digital experiences for startups and SaaS companies',
     type: 'website',
   },
 };

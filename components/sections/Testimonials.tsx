@@ -21,13 +21,13 @@ export function Testimonials() {
             variants={staggerItem}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            Trusted by Startup Founders
+            Client Testimonials
           </motion.h2>
           <motion.p
             variants={staggerItem}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            Real outcomes from founders who launched with LiftOff.
+            Real outcomes from founders and teams I&apos;ve worked with.
           </motion.p>
         </motion.div>
 
