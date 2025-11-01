@@ -1,76 +1,117 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react'; // Optional: Replace with SVG if not using Lucide
+import { Menu, X, Moon, Sun, Rocket } from 'lucide-react';
+import { useTheme } from '@/components/providers/ThemeProvider';
+import { Button } from './button';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/portfolio', label: 'Portfolio' },
-    { href: '#contact', label: 'Contact' }, // Leave as anchor if you're scrolling to a section
+    { href: '/#process', label: 'Process' },
+    { href: '/#testimonials', label: 'Testimonials' },
   ];
 
   return (
-    <header className="bg-white shadow-md px-6 py-4">
-      <div className="flex items-center justify-between max-w-8xl mx-auto">
-        <Link href="/">
-          <h1 className="text-xl font-bold text-gray-800">Sanni Abiodun</h1>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-background/80 backdrop-blur-lg shadow-md border-b border-border'
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="flex items-center justify-between max-w-7xl mx-auto px-6 py-4">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center group-hover:scale-110 transition-transform">
+            <Rocket className="w-5 h-5 text-white" />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg font-bold text-foreground">LiftOff</span>
+            <span className="text-xs text-muted-foreground">by Abiodun Sanni</span>
+          </div>
         </Link>
 
-        {/* Mobile toggle button */}
-        <button
-          className="md:hidden text-gray-700"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
 
-        {/* Desktop menu */}
-        <nav className="hidden md:flex space-x-6">
-          {navLinks.map((link) =>
-            link.href.startsWith('#') ? (
-              <Link key={link.href} href={link.href} className="text-gray-600 hover:text-gray-900">
-                {link.label}
-              </Link>
-            ) : (
-              <Link key={link.href} href={link.href} passHref>
-                <span className="cursor-pointer text-gray-600 hover:text-gray-900">
-                  {link.label}
-                </span>
-              </Link>
-            ),
-          )}
+          {/* Theme Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-accent transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
+
+          {/* CTA Button */}
+          <Button asChild size="sm" className="bg-liftoff-blue hover:bg-liftoff-blue/90">
+            <Link href="#contact">Book a LiftOff Audit</Link>
+          </Button>
         </nav>
+
+        {/* Mobile Menu Toggle */}
+        <div className="flex items-center gap-4 md:hidden">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-accent transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
+          <button
+            className="text-foreground"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <nav className="mt-4 flex flex-col space-y-2 md:hidden">
-          {navLinks.map((link) =>
-            link.href.startsWith('#') ? (
+        <nav className="md:hidden bg-background border-t border-border">
+          <div className="flex flex-col space-y-4 px-6 py-6">
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-600 hover:text-gray-900"
+                className="text-foreground/80 hover:text-foreground transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </Link>
-            ) : (
-              <Link key={link.href} href={link.href} passHref>
-                <span
-                  className="cursor-pointer text-gray-600 hover:text-gray-900"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </span>
+            ))}
+            <Button asChild className="bg-liftoff-blue hover:bg-liftoff-blue/90 w-full">
+              <Link href="#contact" onClick={() => setIsOpen(false)}>
+                Book a LiftOff Audit
               </Link>
-            ),
-          )}
+            </Button>
+          </div>
         </nav>
       )}
     </header>

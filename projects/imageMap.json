@@ -1,4 +1,10 @@
 {
+  "Awozwa": [
+    "/projects/Awozwa/images/Awozwa (2).jpg",
+    "/projects/Awozwa/images/Awozwa (3).jpg",
+    "/projects/Awozwa/images/Awozwa.jpg",
+    "/projects/Awozwa/images/cover.jpg"
+  ],
   "design-synchrony": [
     "/projects/design-synchrony/images/cover.jpg",
     "/projects/design-synchrony/images/danny-greenberg-gTT6fpD8gms-unsplash.jpg",
@@ -7,35 +13,83 @@
     "/projects/design-synchrony/images/hero-bg.jpg",
     "/projects/design-synchrony/images/rodrigo-silva-CSDO2tBJc0E-unsplash.jpg"
   ],
-  "fintech-web-app": [
-    "/projects/fintech-web-app/images/cover.jpg",
-    "/projects/fintech-web-app/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app/images/hero-bg.jpg"
+  "Devinals": [
+    "/projects/Devinals/images/cover.jpg",
+    "/projects/Devinals/images/Devinals (2).jpg",
+    "/projects/Devinals/images/Devinals (3).jpg",
+    "/projects/Devinals/images/Devinals.jpg"
   ],
-  "fintech-web-app copy 2": [
-    "/projects/fintech-web-app copy 2/images/cover.jpg",
-    "/projects/fintech-web-app copy 2/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app copy 2/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app copy 2/images/hero-bg.jpg"
+  "FI-Options": [
+    "/projects/FI-Options/images/cover.jpg",
+    "/projects/FI-Options/images/FI.jpg",
+    "/projects/FI-Options/images/FI2.jpg",
+    "/projects/FI-Options/images/FI3.jpg"
   ],
-  "fintech-web-app copy 3": [
-    "/projects/fintech-web-app copy 3/images/cover.jpg",
-    "/projects/fintech-web-app copy 3/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app copy 3/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app copy 3/images/hero-bg.jpg"
+  "Fin-sync": [
+    "/projects/Fin-sync/images/cover.jpg",
+    "/projects/Fin-sync/images/fin-sync.jpg",
+    "/projects/Fin-sync/images/fin-sync2.jpg",
+    "/projects/Fin-sync/images/fin-sync3.jpg"
   ],
-  "fintech-web-app copy 4": [
-    "/projects/fintech-web-app copy 4/images/cover.jpg",
-    "/projects/fintech-web-app copy 4/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app copy 4/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app copy 4/images/hero-bg.jpg"
+  "fintech-web-app copy 13": [
+    "/projects/fintech-web-app copy 13/images/cover.jpg",
+    "/projects/fintech-web-app copy 13/images/hero-bg copy 3.jpg",
+    "/projects/fintech-web-app copy 13/images/hero-bg copy.jpg",
+    "/projects/fintech-web-app copy 13/images/hero-bg.jpg"
   ],
-  "fintech-web-app copy 5": [
-    "/projects/fintech-web-app copy 5/images/cover.jpg",
-    "/projects/fintech-web-app copy 5/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app copy 5/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app copy 5/images/hero-bg.jpg"
+  "fintech-web-app copy 14": [
+    "/projects/fintech-web-app copy 14/images/cover.jpg",
+    "/projects/fintech-web-app copy 14/images/hero-bg copy 3.jpg",
+    "/projects/fintech-web-app copy 14/images/hero-bg copy.jpg",
+    "/projects/fintech-web-app copy 14/images/hero-bg.jpg"
+  ],
+  "First-Dailey-H": [
+    "/projects/First-Dailey-H/images/cover.jpg",
+    "/projects/First-Dailey-H/images/F&H.jpg",
+    "/projects/First-Dailey-H/images/F&H2.jpg",
+    "/projects/First-Dailey-H/images/F&H3.jpg"
+  ],
+  "GHL": [
+    "/projects/GHL/images/cover.jpg",
+    "/projects/GHL/images/ghl (2).jpg",
+    "/projects/GHL/images/ghl (3).jpg",
+    "/projects/GHL/images/ghl.jpg"
+  ],
+  "GlassCasa": [
+    "/projects/GlassCasa/images/cover.jpg",
+    "/projects/GlassCasa/images/Glass (2).jpg",
+    "/projects/GlassCasa/images/Glass (3).jpg",
+    "/projects/GlassCasa/images/Glass.jpg"
+  ],
+  "Lookman": [
+    "/projects/Lookman/images/cover.jpg",
+    "/projects/Lookman/images/Lookman (2).jpg",
+    "/projects/Lookman/images/Lookman (3).jpg",
+    "/projects/Lookman/images/Lookman.jpg"
+  ],
+  "MonirPortfolio": [
+    "/projects/MonirPortfolio/images/cover.jpg",
+    "/projects/MonirPortfolio/images/monir.jpg",
+    "/projects/MonirPortfolio/images/monir2.jpg",
+    "/projects/MonirPortfolio/images/monir3.jpg"
+  ],
+  "Portal-apply": [
+    "/projects/Portal-apply/images/cover.jpg",
+    "/projects/Portal-apply/images/portal apply (2).jpg",
+    "/projects/Portal-apply/images/portal apply (3).jpg",
+    "/projects/Portal-apply/images/portal apply.jpg"
+  ],
+  "Rhenda-frontend": [
+    "/projects/Rhenda-frontend/images/cover.jpg",
+    "/projects/Rhenda-frontend/images/rhenda (2).jpg",
+    "/projects/Rhenda-frontend/images/rhenda (3).jpg",
+    "/projects/Rhenda-frontend/images/rhenda.jpg"
+  ],
+  "Sync-Assistants": [
+    "/projects/Sync-Assistants/images/cover.jpg",
+    "/projects/Sync-Assistants/images/sync (2).jpg",
+    "/projects/Sync-Assistants/images/sync (3).jpg",
+    "/projects/Sync-Assistants/images/Sync.jpg"
   ],
   "tera-organics": [
     "/projects/tera-organics/images/cover.jpg",

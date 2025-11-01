@@ -1,0 +1,51 @@
+OUR WEBSITES
+Design Synchrony (Built with WordPress)  - https://designsynchrony.com.ng/
+Tera Organics (Built with WordPress) - https://tera-organics.com/ - A luxury coffee and vanilla exporting brand
+FI Options (Built with Next.js. Multi-lingual featured) - https://fioption.vercel.app/en
+First Dailey and H (Built with Hostinger web Builder) - https://firstdaileyandh.com/ - A natural resource exporter, serving global markets
+Monir Portfolio (Built with WordPress) - https://monirportfolio.com/ - A portfolio for MD Monir Hossen, who provided the layout to  be built exactly as it is
+Rhenda Admin (Built with React JS and Laravel) - https://rhenda-admin.vercel.app/ - An admin dashboard for the Rhenda Team
+Rhenda Frontend (Built with React JS and Laravel) - https://rhenda-frontend.vercel.app/ - A service provider connecting platform, connecting traders and service providers to potential customers
+First Dailey and H (Rebuilt with WordPress) - https://first.designsynchrony.com.ng/ - Rebuilt to transition from Hostinger web builder to WordPress
+Design Synchrony (Different Interface) - Built to test a different interface idea
+Fin-Sync (In-progress, built with Next JS, Tailwind CSS, and Firebase backend, with Python for AI categorization model) - https://finsyncapp.vercel.app/ - A personal finance app, with an in-built AI assistant buddy overseeing your financial life, as a finance sidekick. Pointing out where your money is going, what’s happening, and helping you plan towards goals, while keeping an eye on and automatically recording your bank transactions and categorizing them
+Cost Calculator - https://cost-calculator-three.vercel.app/ - A cost calculator for printing professionals
+Design Synchrony Admin - https://design-synchrony-admin.vercel.app/ - An admin interface for Design Synchrony
+Portal Apply - (Built with Next Js and Express Js) - An e-learning platform that allows multiple institutions and bodies to partner and sell programs, services, and courses to students - https://portalapply.com/ (
+Login Details:
+student@example.com 
+password: password123
+admin@example.com 
+password: password123
+partner@example.com 
+password: password123
+Sync Assistant - syncsage.designsynchrony.com.ng
+Glass Casa The Movie - https://glasscasathemovie.com - A blog website focused on promoting the movie Glass Casa The Movie
+Bouwbedrijf Lookman - (Built with WordPress) - https://lookmanbouw.nl/ - Landing page redesign and bug fixes 
+Devinals - https://devinals.nl - (Built with WordPress) - Bug fixes and form submission setup
+Awozwa - https://www.awozwa.com/ - (Built with Wix) - Website redesign - A translation service provider for professionals
+Simple signup form design - https://signup-abi.vercel.app/
+Pasto Commando - https://pastocomandoabi.vercel.app/en - A website built from a template
+Integration Dashboard - https://ghl-integration-dashboard.vercel.app/ - A dashboard built to consume and display analytic data from Google and the GHL platform
+Abilive - https://abilive.vercel.app/ - A sample blog-focused portfolio, with light and dark modes.
+Forex Risk Calculator - Built with Next JS and hosted on Vercel: https://forexcalc`u.vercel.app/. A clean, minimalist, and developer-friendly Risk-to-Reward Ratio Calculator for Forex, Crypto, and other trading setups. Built with Next.js, Tailwind CSS, and Headless UI. This tool helps traders calculate their potential profit vs. loss (R: R ratio) based on entry, stop loss, and take profit levels, with a real-time preview and explanation.
+Fashion Measurement House - https://tfcm.vercel.app/ A measurement tool for fashion designers to take measurements from clients and easily access them from anywhere for free. Fashion designers could pay for ads to a niche audience or pay for white labeling and branding. https://tfcm.vercel.app/
+
+UI/UX
+Awozwa - https://www.figma.com/proto/9DW3pHAbu5ca28Da2X7Jab?node-id=0-1&t=z9KsEKOT6aJh3NjZ-6
+Sample real estate design - https://www.figma.com/proto/5ZVNX4OnqAup6JrlBWp5UM?node-id=0-1&t=z9KsEKOT6aJh3NjZ-6
+Work women - https://www.figma.com/proto/9JQWDlnFGDbPDSGqO4ju1C?node-id=0-1&t=usa5Nxam45vKp7kv-6
+Docki - AIChatbot with document editing and management functionality - https://www.figma.com/proto/4lPHehd0k3ETHN2mwLhqHo?node-id=2004-800&t=usa5Nxam45vKp7kv-6
+Todoist Redesign - https://www.figma.com/proto/2sVizSDhTKly1to2ZXX2Kb?node-id=0-1&t=usa5Nxam45vKp7kv-6
+Student’s Needs - https://www.figma.com/design/PipcgPcJvDpW99lCe3rOO7/Student-s-Needs?m=auto&t=usa5Nxam45vKp7kv-6 | https://www.figma.com/proto/PipcgPcJvDpW99lCe3rOO7/Student-s-Needs?node-id=8-1342 
+Test Writer - https://www.figma.com/proto/kjM2L6XlNarVWOnH545MxI?node-id=0-1&t=usa5Nxam45vKp7kv-6
+Student’s Needs Vendor - https://www.figma.com/proto/PipcgPcJvDpW99lCe3rOO7?node-id=8-2833&t=usa5Nxam45vKp7kv-6
+Wallet - https://www.figma.com/proto/me30YXXPQdxKXZ81DxwRO0?node-id=0-1&t=usa5Nxam45vKp7kv-6
+
+
+
+
+
+AI Bot and Machine Learning
+AI PHP-Unit test generator for Laravel
+AI model for basic transaction categorization

@@ -44,10 +44,12 @@ export async function getAllProjects(): Promise<Project[]> {
         title: data.title,
         description: data.description,
         slug,
-        date: data.date ?? '', // default empty
+        date: data.date ?? '',
         coverImage: data.coverImage ?? '',
 
         overview: data.overview ?? '',
+        category: data.category,
+        outcomeType: data.outcomeType,
         features: data.features ?? [],
         technologies: {
           frontend: data.technologies?.frontend ?? [],
@@ -58,6 +60,10 @@ export async function getAllProjects(): Promise<Project[]> {
         },
         screenshots: data.screenshots ?? [],
         outcome: data.outcome ?? '',
+        problem: data.problem ?? '',
+        approach: data.approach ?? '',
+        result: data.result ?? '',
+        metrics: data.metrics ?? [],
         ...data,
       };
 
@@ -99,10 +105,12 @@ export async function getProjectBySlug(slug: string): Promise<Project | null> {
     title: data.title,
     description: data.description,
     slug,
-    date: data.date ?? '', // default empty
+    date: data.date ?? '',
     coverImage: data.coverImage ?? '',
 
     overview: data.overview ?? '',
+    category: data.category,
+    outcomeType: data.outcomeType,
     features: data.features ?? [],
     technologies: {
       frontend: data.technologies?.frontend ?? [],
@@ -113,6 +121,10 @@ export async function getProjectBySlug(slug: string): Promise<Project | null> {
     },
     screenshots: data.screenshots ?? [],
     outcome: data.outcome ?? '',
+    problem: data.problem ?? '',
+    approach: data.approach ?? '',
+    result: data.result ?? '',
+    metrics: data.metrics ?? [],
     ...data,
   };
 

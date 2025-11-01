@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Gallery({
   items,
@@ -39,10 +40,12 @@ export default function Gallery({
           rel="noreferrer"
           className="block shrink-0 snap-center"
         >
-          <img
+          <Image
             src={item.src}
             alt={`Screenshot ${index + 1}`}
-            className="w-[300px] rounded-md shadow-md"
+            width={item.width}
+            height={item.height}
+            className="w-[300px] h-auto rounded-md shadow-md object-cover"
           />
         </Link>
       ))}

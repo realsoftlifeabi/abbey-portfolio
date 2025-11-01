@@ -1,8 +1,30 @@
 import { getAllProjects } from '@/lib/projects';
-import AnimatedSections from './AnimatedSections';
+import Header from '@/components/ui/Header';
+import Footer from '@/components/ui/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { OfferStack } from '@/components/sections/OfferStack';
+import { Process } from '@/components/sections/Process';
+import { CaseStudies } from '@/components/sections/CaseStudies';
+import { Testimonials } from '@/components/sections/Testimonials';
+import { FAQ } from '@/components/sections/FAQ';
+import { CTA } from '@/components/sections/CTA';
 
 export default async function HomePage() {
   const projects = await getAllProjects();
 
-  return <AnimatedSections projects={projects} />;
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <CaseStudies projects={projects} />
+        <OfferStack />
+        <Process />
+        <Testimonials />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
+    </>
+  );
 }

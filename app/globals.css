@@ -41,6 +41,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-liftoff-blue: var(--liftoff-blue);
+  --color-liftoff-orange: var(--liftoff-orange);
+  --color-liftoff-slate: var(--liftoff-slate);
+  --color-liftoff-slate-light: var(--liftoff-slate-light);
 }
 
 :root {
@@ -76,6 +80,12 @@
   --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
   --sidebar-border: oklch(0.928 0.006 264.531);
   --sidebar-ring: oklch(0.707 0.022 261.325);
+
+  /* LiftOff Brand Colors */
+  --liftoff-blue: oklch(0.55 0.22 250);
+  --liftoff-orange: oklch(0.68 0.18 45);
+  --liftoff-slate: oklch(0.35 0.02 260);
+  --liftoff-slate-light: oklch(0.65 0.01 260);
 }
 
 .dark {
