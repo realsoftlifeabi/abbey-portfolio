@@ -22,7 +22,7 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
             key={`${project.slug}--${projects?.length}--${i}`}
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
-            <Card className="hover:shadow-xl transition-all duration-300 rounded-3xl overflow-hidden group bg-white dark:bg-zinc-900 pt-0">
+            <Card className="hover:shadow-xl transition-all duration-300 rounded-3xl overflow-hidden group bg-card pt-0">
               <Link href={`/portfolio/${project.slug}`} className="block">
                 <div className="relative w-full h-60 overflow-hidden">
                   <AnimatedImage
@@ -30,7 +30,7 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
                     width={500}
                     height={500}
                     alt={project.metadata.title}
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 w-full h-full"
                   />
                 </div>
                 <CardContent className="p-6">

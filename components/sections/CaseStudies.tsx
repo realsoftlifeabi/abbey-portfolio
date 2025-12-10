@@ -73,9 +73,7 @@ export function CaseStudies({ projects }: CaseStudiesProps) {
                     </p>
                     {project.metadata.outcome && (
                       <div className="pt-3 border-t border-border">
-                        <p className="text-xs text-liftoff-blue font-medium">
-                          {project.metadata.outcome}
-                        </p>
+                        <p className="text-xs text-muted-foreground">{project.metadata.outcome}</p>
                       </div>
                     )}
                   </CardContent>
