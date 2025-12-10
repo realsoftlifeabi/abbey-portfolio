@@ -81,7 +81,7 @@ export default function Content({ project }: { project: Project }) {
         </section>
 
         {/* Content Sections */}
-        <div className="max-w-7xl mx-auto px-6 pb-20 space-y-24">
+        <div className="max-w-7xl mx-auto px-6 pb-6 space-y-24">
           {/* Overview Section */}
           {meta.overview && (
             <motion.section
