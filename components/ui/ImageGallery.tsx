@@ -5,8 +5,7 @@ const Gallery = dynamic(() => import('./PhotoSwipeLightbox'), { ssr: false });
 export const ImageGallery = ({ screenshots }: { screenshots: string[] }) => {
   const galleryItems = screenshots.map((src) => ({
     src,
-    width: 1280,
-    height: 720,
+    // Remove fixed dimensions to let PhotoSwipe auto-detect and respect aspect ratio
   }));
 
   return (
