@@ -54,9 +54,7 @@ export default function Content({ project }: { project: Project }) {
                 <AnimatedImage
                   src={`/projects/${project.slug}${meta.coverImage}`}
                   alt={`${meta.title} Cover`}
-                  width={1200}
-                  height={600}
-                  className="rounded-2xl shadow-2xl h-[60vh] max-h-[600px] object-cover w-full"
+                  className="rounded-2xl shadow-2xl w-full max-h-[70vh] object-contain"
                 />
               </motion.div>
             )}

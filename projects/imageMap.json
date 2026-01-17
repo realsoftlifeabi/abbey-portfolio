@@ -2,7 +2,6 @@
   "Awozwa": [
     "/projects/Awozwa/images/Awozwa (2).jpg",
     "/projects/Awozwa/images/Awozwa (3).jpg",
-    "/projects/Awozwa/images/Awozwa.jpg",
     "/projects/Awozwa/images/cover.jpg"
   ],
   "design-synchrony": [
@@ -20,14 +19,18 @@
     "/projects/Devinals/images/Devinals.jpg"
   ],
   "FI-Options": [
-    "/projects/FI-Options/images/cover.jpg",
-    "/projects/FI-Options/images/FI.jpg",
-    "/projects/FI-Options/images/FI2.jpg",
-    "/projects/FI-Options/images/FI3.jpg"
+    "/projects/FI-Options/images/cover.png",
+    "/projects/FI-Options/images/iPhone-13-PRO-fioption.vercel.app (1).png",
+    "/projects/FI-Options/images/iPhone-13-PRO-fioption.vercel.app.png",
+    "/projects/FI-Options/images/Screenshot 2026-01-17 182116.png",
+    "/projects/FI-Options/images/Screenshot 2026-01-17 182130.png",
+    "/projects/FI-Options/images/Screenshot 2026-01-17 182141.png",
+    "/projects/FI-Options/images/Screenshot 2026-01-17 182214.png",
+    "/projects/FI-Options/images/Screenshot 2026-01-17 182238.png",
+    "/projects/FI-Options/images/Screenshot 2026-01-17 182326.png"
   ],
   "Fin-sync": [
     "/projects/Fin-sync/images/cover.jpg",
-    "/projects/Fin-sync/images/fin-sync.jpg",
     "/projects/Fin-sync/images/fin-sync2.jpg",
     "/projects/Fin-sync/images/fin-sync3.jpg"
   ],
