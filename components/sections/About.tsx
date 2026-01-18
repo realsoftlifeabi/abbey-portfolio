@@ -74,7 +74,7 @@ export function About() {
                 variants={staggerItem}
                 className="p-8 rounded-2xl bg-card border border-border hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg logo-gradient flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{item.title}</h3>
@@ -91,7 +91,7 @@ export function About() {
           transition={{ delay: 0.3 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="p-8 rounded-2xl bg-gradient-to-br from-liftoff-blue/5 to-liftoff-orange/5 border border-border">
+          <div className="p-8 rounded-2xl bg-gradient-to-br from-[--liftoff-blue]/5 to-[--liftoff-orange]/5 border border-border">
             <h3 className="text-2xl font-bold text-foreground mb-4">My Approach</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
               I believe great products are born at the intersection of strategy, design, and
