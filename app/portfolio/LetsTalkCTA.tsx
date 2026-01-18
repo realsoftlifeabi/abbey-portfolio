@@ -23,7 +23,7 @@ export const LetsTalkCTA = () => (
 
     {/* Content */}
     <div className="relative z-10 max-w-4xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[--liftoff-blue] via-[--liftoff-orange] to-[--liftoff-blue] bg-clip-text text-transparent dark:from-white dark:via-white/90 dark:to-white bg-size-200 animate-gradient">
+      <h2 className="text-4xl md:text-5xl font-bold mb-6 header-gradient dark:from-white dark:via-white/90 dark:to-white">
         Ready to Build Something Amazing?
       </h2>
       <p className="text-xl text-muted-foreground dark:text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto">
@@ -33,7 +33,7 @@ export const LetsTalkCTA = () => (
       <Button
         variant="liftoff"
         size="lg"
-        className="shadow-lg shadow-[--liftoff-blue]/25 hover:shadow-xl hover:shadow-[--liftoff-orange]/30 transition-all duration-300 dark:bg-[linear-gradient(to_right,var(--liftoff-blue),var(--liftoff-orange))] dark:shadow-white/10 dark:hover:shadow-white/20"
+        className="shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300"
         asChild
       >
         <Link href="#contact">Let&apos;s Talk</Link>

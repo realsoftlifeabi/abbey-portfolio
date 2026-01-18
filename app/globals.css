@@ -120,6 +120,10 @@
   --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+
+  /* LiftOff Brand Colors */
+  --liftoff-blue: oklch(0.65 0.25 250);
+  --liftoff-orange: oklch(0.75 0.2 45);
 }
 
 .scrollbar-hidden {
@@ -163,6 +167,24 @@
 
   .animate-gradient {
     animation: gradient-shift 3s ease-in-out infinite;
+  }
+
+  .title-gradient {
+    background: linear-gradient(135deg, #3b82f6 0%, #f97316 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+  }
+
+  .header-gradient {
+    background: linear-gradient(135deg, #2563eb 0%, #ea580c 50%, #2563eb 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    background-size: 200% 200% !important;
+    animation: gradient-shift 3s ease-in-out infinite !important;
   }
 
   @keyframes gradient-shift {

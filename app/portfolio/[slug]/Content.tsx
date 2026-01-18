@@ -18,7 +18,7 @@ const components: MDXComponents = {
   h2: (props: HTMLMotionProps<'h2'>) => (
     <motion.h2
       {...props}
-      className={`text-3xl font-bold mt-12 mb-6 text-foreground bg-gradient-to-r from-[--liftoff-blue] to-[--liftoff-orange] bg-clip-text text-transparent ${props.className ?? ''}`}
+      className={`text-3xl font-bold mt-12 mb-6 text-foreground title-gradient ${props.className ?? ''}`}
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
@@ -91,9 +91,7 @@ export default function Content({ project }: { project: Project }) {
               <Badge className="mb-4 px-4 py-2 bg-[--liftoff-blue]/10 text-[--liftoff-blue] border-[--liftoff-blue]/20">
                 SaaS Project
               </Badge>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[--liftoff-blue] to-[--liftoff-orange] bg-clip-text text-transparent">
-                {meta.title}
-              </h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 title-gradient">{meta.title}</h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 {meta.description}
               </p>

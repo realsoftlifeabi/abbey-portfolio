@@ -62,9 +62,7 @@ export function Hero() {
           >
             Hi, I&apos;m Abiodun Sanni
             <br />
-            <span className="bg-gradient-to-r from-liftoff-blue to-liftoff-orange bg-clip-text text-transparent">
-              Product Designer & Developer
-            </span>
+            <span className="title-gradient">Product Designer & Developer</span>
           </motion.h1>
 
           {/* Subheadline */}

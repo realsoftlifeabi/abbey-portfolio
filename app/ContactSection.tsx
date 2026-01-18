@@ -34,7 +34,7 @@ export const ContactSection = () => (
     <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-32">
       <div className="text-center mb-16">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[--liftoff-blue] to-[--liftoff-orange] bg-clip-text text-transparent dark:bg-none dark:bg-clip-border dark:text-white"
+          className="text-4xl md:text-5xl font-bold mb-6 header-gradient dark:bg-none dark:bg-clip-border dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -138,7 +138,7 @@ export const ContactSection = () => (
         <Button
           variant="liftoff"
           size="lg"
-          className="shadow-lg shadow-[--liftoff-blue]/25 hover:shadow-xl hover:shadow-[--liftoff-orange]/30 transition-all duration-300 dark:bg-[linear-gradient(to_right,var(--liftoff-blue),var(--liftoff-orange))] dark:shadow-white/10 dark:hover:shadow-white/20"
+          className="shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300"
           asChild
         >
           <Link href="https://wa.me/2348091565803" target="_blank">
