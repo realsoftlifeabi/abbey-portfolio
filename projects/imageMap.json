@@ -5,18 +5,12 @@
     "/projects/Awozwa/images/cover.jpg"
   ],
   "design-synchrony": [
-    "/projects/design-synchrony/images/cover.jpg",
-    "/projects/design-synchrony/images/danny-greenberg-gTT6fpD8gms-unsplash.jpg",
-    "/projects/design-synchrony/images/hero-bg copy 3.jpg",
-    "/projects/design-synchrony/images/hero-bg copy.jpg",
-    "/projects/design-synchrony/images/hero-bg.jpg",
-    "/projects/design-synchrony/images/rodrigo-silva-CSDO2tBJc0E-unsplash.jpg"
-  ],
-  "Devinals": [
-    "/projects/Devinals/images/cover.jpg",
-    "/projects/Devinals/images/Devinals (2).jpg",
-    "/projects/Devinals/images/Devinals (3).jpg",
-    "/projects/Devinals/images/Devinals.jpg"
+    "/projects/design-synchrony/images/cover.png",
+    "/projects/design-synchrony/images/mobile 2.png",
+    "/projects/design-synchrony/images/tablet - blog.png",
+    "/projects/design-synchrony/images/tablet - shop.png",
+    "/projects/design-synchrony/images/tablet 2.png",
+    "/projects/design-synchrony/images/tablet3.png"
   ],
   "FI-Options": [
     "/projects/FI-Options/images/cover.png",
@@ -34,23 +28,17 @@
     "/projects/Fin-sync/images/fin-sync2.jpg",
     "/projects/Fin-sync/images/fin-sync3.jpg"
   ],
-  "fintech-web-app copy 13": [
-    "/projects/fintech-web-app copy 13/images/cover.jpg",
-    "/projects/fintech-web-app copy 13/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app copy 13/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app copy 13/images/hero-bg.jpg"
-  ],
-  "fintech-web-app copy 14": [
-    "/projects/fintech-web-app copy 14/images/cover.jpg",
-    "/projects/fintech-web-app copy 14/images/hero-bg copy 3.jpg",
-    "/projects/fintech-web-app copy 14/images/hero-bg copy.jpg",
-    "/projects/fintech-web-app copy 14/images/hero-bg.jpg"
-  ],
   "First-Dailey-H": [
-    "/projects/First-Dailey-H/images/cover.jpg",
-    "/projects/First-Dailey-H/images/F&H.jpg",
-    "/projects/First-Dailey-H/images/F&H2.jpg",
-    "/projects/First-Dailey-H/images/F&H3.jpg"
+    "/projects/First-Dailey-H/images/cover.png",
+    "/projects/First-Dailey-H/images/cover2.png",
+    "/projects/First-Dailey-H/images/first_dailey_1920x1080 (1).png",
+    "/projects/First-Dailey-H/images/first_dailey_1920x1080 (3).png",
+    "/projects/First-Dailey-H/images/first_dailey_1920x1080 (7).png",
+    "/projects/First-Dailey-H/images/first_dailey_1920x1080 (8).png",
+    "/projects/First-Dailey-H/images/first_dailey_1920x1080 (9).png",
+    "/projects/First-Dailey-H/images/first_dailey_1920x1080.png",
+    "/projects/First-Dailey-H/images/untitled_asset_1920x1080 (3).png",
+    "/projects/First-Dailey-H/images/untitled_asset_1920x1080.png"
   ],
   "GHL": [
     "/projects/GHL/images/cover.jpg",
