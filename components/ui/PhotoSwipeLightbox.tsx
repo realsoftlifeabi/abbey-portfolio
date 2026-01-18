@@ -84,7 +84,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
         >
           <Image
             src={item.src}
-            alt={`Screenshot ${index + 1}`}
+            alt={`Project Gallery image ${index + 1}`}
             width={item.width || 300}
             height={item.height || 200}
             className="w-[300px] h-auto rounded-md shadow-md object-cover"
