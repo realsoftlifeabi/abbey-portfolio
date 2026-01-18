@@ -74,7 +74,7 @@ metrics:
 Ensure each project has:
 
 ```
-/projects/[slug]/images/cover.jpg
+/projects/[slug]/images/cover.png
 ```
 
 #### 3. Update Contact Links
@@ -207,7 +207,7 @@ All sections are fully responsive with mobile-first design.
 
 ### Issue: Images not loading
 
-**Solution**: Ensure images exist at `/projects/[slug]/images/cover.jpg`
+**Solution**: Ensure images exist at `/projects/[slug]/images/cover.png`
 
 ### Issue: Theme toggle not working
 
@@ -245,7 +245,7 @@ abbey-portfolio/
     └── [slug]/
         ├── index.mdx
         └── images/
-            └── cover.jpg
+            └── cover.png
 ```
 
 ---

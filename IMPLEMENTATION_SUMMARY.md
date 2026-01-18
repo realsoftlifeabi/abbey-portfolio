@@ -112,7 +112,7 @@
    - Integrate with `lottie-react` or similar
 
 3. **Images & Screenshots**
-   - Ensure all projects have `cover.jpg` in `/projects/[slug]/images/`
+   - Ensure all projects have `cover.png` in `/projects/[slug]/images/`
    - Add company logos for trust bar in `/public/logos/`
 
 ### Phase 2: Advanced Features
