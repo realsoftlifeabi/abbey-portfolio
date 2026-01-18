@@ -9,6 +9,9 @@ import PageLayout from '@/components/layouts/Layout';
 import { LetsTalkCTA } from '../LetsTalkCTA';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 const components: MDXComponents = {
   Image: AnimatedImage,
@@ -44,6 +47,23 @@ export default function Content({ project }: { project: Project }) {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-[--liftoff-blue]/5 to-[--liftoff-orange]/5" />
           <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20">
+            {/* Back Button */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="mb-8"
+            >
+              <Button variant="ghost" size="sm" asChild className="group">
+                <Link
+                  href="/portfolio"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+                  Back to Portfolio
+                </Link>
+              </Button>
+            </motion.div>
             {meta.coverImage && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
