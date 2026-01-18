@@ -68,7 +68,7 @@ export default function Header() {
           </button>
 
           {/* CTA Button */}
-          <Button asChild size="sm" className="bg-liftoff-blue hover:bg-liftoff-blue/90">
+          <Button asChild size="sm" className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white">
             <Link href="#contact">Get In Touch</Link>
           </Button>
         </nav>
@@ -106,7 +106,7 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="bg-liftoff-blue hover:bg-liftoff-blue/90 w-full">
+            <Button asChild className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white w-full">
               <Link href="#contact" onClick={() => setIsOpen(false)}>
                 Get In Touch
               </Link>

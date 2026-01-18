@@ -15,7 +15,7 @@ export const AnimatedImage = ({
   width = 800,
   height = 500,
   className = '',
-  fallbackSrc = '/fallback.jpg',
+  fallbackSrc = '/placeholder.svg',
   ...rest
 }: AnimatedImageProps) => {
   const [hasError, setHasError] = useState(false);

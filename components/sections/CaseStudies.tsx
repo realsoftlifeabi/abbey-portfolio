@@ -50,30 +50,31 @@ export function CaseStudies({ projects }: CaseStudiesProps) {
         >
           {featuredProjects.map((project) => (
             <motion.div key={project.slug} variants={staggerItem}>
-              <Link href={`/portfolio/${project.slug}`}>
-                <Card className="h-full hover:shadow-xl transition-all duration-300 border border-border overflow-hidden group">
-                  <div className="relative w-full h-64 overflow-hidden bg-muted">
+              <Link href={`/portfolio/${project.slug}`} className="block h-full">
+                <Card className="h-full hover:shadow-xl transition-all duration-300 border border-border overflow-hidden group flex flex-col">
+                  <div className="relative w-full h-48 overflow-hidden bg-muted flex-shrink-0">
                     <AnimatedImage
-                      src={`/projects/${project.slug}${project.metadata.coverImage}`}
-                      width={600}
-                      height={400}
+                      src={`/projects/${project.slug}/images/cover.jpg`}
+                      width={400}
+                      height={300}
                       alt={project.metadata.title}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                      fallbackSrc="/placeholder.svg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                       <ExternalLink className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-liftoff-blue transition-colors">
+                  <CardContent className="p-6 flex-1 flex flex-col">
+                    {/* <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-liftoff-blue transition-colors">
                       {project.metadata.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-4">
+                    </h3> */}
+                    {/* <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-4 flex-1">
                       {project.metadata.description}
-                    </p>
+                    </p> */}
                     {project.metadata.outcome && (
-                      <div className="pt-3 border-t border-border">
-                        <p className="text-xs text-muted-foreground">{project.metadata.outcome}</p>
+                      <div className="flex-shrink-0">
+                        <p className="text-sm text-muted-foreground">{project.metadata.outcome}</p>
                       </div>
                     )}
                   </CardContent>

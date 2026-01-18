@@ -22,22 +22,23 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
             key={`${project.slug}--${projects?.length}--${i}`}
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
-            <Card className="hover:shadow-xl transition-all duration-300 rounded-3xl overflow-hidden group bg-card pt-0">
-              <Link href={`/portfolio/${project.slug}`} className="block">
-                <div className="relative w-full h-60 overflow-hidden">
+            <Card className="hover:shadow-xl transition-all duration-300 rounded-3xl overflow-hidden group bg-card pt-0 h-full flex flex-col">
+              <Link href={`/portfolio/${project.slug}`} className="block flex-1 flex flex-col">
+                <div className="relative w-full h-48 overflow-hidden flex-shrink-0">
                   <AnimatedImage
-                    src={`/projects/${project.slug}${project.metadata.coverImage}`}
-                    width={500}
-                    height={500}
+                    src={`/projects/${project.slug}/images/cover.jpg`}
+                    width={400}
+                    height={300}
                     alt={project.metadata.title}
+                    fallbackSrc="/placeholder.svg"
                     className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 w-full h-full"
                   />
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex-1 flex flex-col">
                   <h3 className="text-lg font-bold mb-2 text-gray-800 dark:text-white">
                     {project.metadata.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3 flex-1">
                     {project.metadata.description}
                   </p>
                 </CardContent>

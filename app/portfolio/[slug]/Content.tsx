@@ -77,6 +77,7 @@ export default function Content({ project }: { project: Project }) {
                   className="rounded-2xl shadow-2xl w-full max-w-5xl mx-auto object-contain"
                   width={1200}
                   height={800}
+                  fallbackSrc="/placeholder.svg"
                 />
               </motion.div>
             )}
