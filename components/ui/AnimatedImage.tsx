@@ -38,19 +38,19 @@ export const AnimatedImage = ({
 
   return (
     <motion.div
-      className="w-full"
+      className="w-full h-full"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <div className="overflow-hidden rounded-xl shadow-md">
+      <div className="overflow-hidden rounded-xl shadow-md h-full">
         <Image
           src={hasError ? fallbackSrc : src}
           alt={alt}
           width={width}
           height={height}
-          className={`w-full h-auto object-contain transition-all duration-700 ease-in-out ${
+          className={`w-full h-auto object-cover transition-all duration-700 ease-in-out ${
             isLoading ? 'blur-md scale-105' : 'blur-0 scale-100'
           } ${className}`}
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1200px"
