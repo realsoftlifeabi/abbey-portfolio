@@ -1,9 +1,0 @@
-Add new projects and update existing portfolio content
-
-- Added 3 new projects: Rhenda Admin, MyMoni, StoreMet Docs
-- Updated content for 8 existing projects with improved descriptions and outcomes
-- Standardized cover image paths across all projects (/images/cover.png)
-- Added public assets for new and existing projects
-- Updated imageMap.json with new project references
-- Removed GlassCasa zip file from projects directory
-- Enhanced project descriptions with clearer problem-solution framing
