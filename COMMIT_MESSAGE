@@ -1,9 +1,9 @@
-Update project assets and documentation
+Add new projects and update existing portfolio content
 
-- Standardized project image formats (replaced .jpg with .png)
-- Added new project images with consistent 1920x1080 resolution
-- Updated GlassCasa project with new assets and zip file
-- Enhanced project documentation and metadata
+- Added 3 new projects: Rhenda Admin, MyMoni, StoreMet Docs
+- Updated content for 8 existing projects with improved descriptions and outcomes
+- Standardized cover image paths across all projects (/images/cover.png)
+- Added public assets for new and existing projects
 - Updated imageMap.json with new project references
-- Improved IMPLEMENTATION_SUMMARY.md and QUICK_START.md documentation
-- Added CaseStudies component updates
+- Removed GlassCasa zip file from projects directory
+- Enhanced project descriptions with clearer problem-solution framing

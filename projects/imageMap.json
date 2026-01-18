@@ -65,46 +65,107 @@
   ],
   "GlassCasa": [
     "/projects/GlassCasa/images/cover.png",
-    "/projects/GlassCasa/images/Glass (2).jpg",
-    "/projects/GlassCasa/images/Glass (3).jpg",
-    "/projects/GlassCasa/images/Glass.jpg"
+    "/projects/GlassCasa/images/glass_casa_1920x1080 (1).png",
+    "/projects/GlassCasa/images/glass_casa_1920x1080 (3).png",
+    "/projects/GlassCasa/images/glass_casa_1920x1080.png",
+    "/projects/GlassCasa/images/untitled_asset_1920x1080 (5).png",
+    "/projects/GlassCasa/images/untitled_asset_1920x1080 (6).png"
   ],
   "Lookman": [
     "/projects/Lookman/images/cover.png",
-    "/projects/Lookman/images/Lookman (2).jpg",
-    "/projects/Lookman/images/Lookman (3).jpg",
-    "/projects/Lookman/images/Lookman.jpg"
+    "/projects/Lookman/images/glass_casa_1920x1080.png",
+    "/projects/Lookman/images/lookman_1920x1080 (1).png",
+    "/projects/Lookman/images/lookman_1920x1080 (3).png",
+    "/projects/Lookman/images/lookman_1920x1080.png"
   ],
   "MonirPortfolio": [
     "/projects/MonirPortfolio/images/cover.png",
-    "/projects/MonirPortfolio/images/monir.jpg",
-    "/projects/MonirPortfolio/images/monir2.jpg",
-    "/projects/MonirPortfolio/images/monir3.jpg"
+    "/projects/MonirPortfolio/images/monir_1920x1080 (2).png",
+    "/projects/MonirPortfolio/images/monir_1920x1080.png"
+  ],
+  "my-moni": [
+    "/projects/my-moni/images/cover.png",
+    "/projects/my-moni/images/my_moni_1920x1080 (10).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (11).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (12).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (13).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (14).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (15).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (2).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (3).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (4).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (5).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (6).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (7).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (8).png",
+    "/projects/my-moni/images/my_moni_1920x1080 (9).png",
+    "/projects/my-moni/images/my_moni_1920x1080.png"
   ],
   "Portal-apply": [
     "/projects/Portal-apply/images/cover.png",
-    "/projects/Portal-apply/images/portal apply (2).jpg",
-    "/projects/Portal-apply/images/portal apply (3).jpg",
-    "/projects/Portal-apply/images/portal apply.jpg"
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (1).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (10).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (3).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (4).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (5).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (6).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (7).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (8).png",
+    "/projects/Portal-apply/images/portal_apply_1920x1080 (9).png"
+  ],
+  "rhenda-admin": [
+    "/projects/rhenda-admin/images/cover.png",
+    "/projects/rhenda-admin/images/rhenda_1600x1200 (2).png",
+    "/projects/rhenda-admin/images/rhenda_1600x1200 (3).png",
+    "/projects/rhenda-admin/images/rhenda_1600x1200.png"
   ],
   "Rhenda-frontend": [
     "/projects/Rhenda-frontend/images/cover.png",
-    "/projects/Rhenda-frontend/images/rhenda (2).jpg",
-    "/projects/Rhenda-frontend/images/rhenda (3).jpg",
-    "/projects/Rhenda-frontend/images/rhenda.jpg"
+    "/projects/Rhenda-frontend/images/rhenda_1920x1080 (2).png",
+    "/projects/Rhenda-frontend/images/rhenda_1920x1080 (3).png",
+    "/projects/Rhenda-frontend/images/rhenda_1920x1080 (4).png",
+    "/projects/Rhenda-frontend/images/rhenda_1920x1080 (5).png",
+    "/projects/Rhenda-frontend/images/rhenda_1920x1080.png"
+  ],
+  "storemet-docs": [
+    "/projects/storemet-docs/images/cover.png",
+    "/projects/storemet-docs/images/storemet_docs_1600x1200 (1).png",
+    "/projects/storemet-docs/images/storemet_docs_1600x1200 (2).png",
+    "/projects/storemet-docs/images/storemet_docs_1600x1200 (3).png",
+    "/projects/storemet-docs/images/storemet_docs_1600x1200.png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (1).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (10).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (11).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (12).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (14).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (2).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (3).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (5).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (6).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (7).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080 (9).png",
+    "/projects/storemet-docs/images/storemet_docs_1920x1080.png"
   ],
   "Sync-Assistants": [
     "/projects/Sync-Assistants/images/cover.png",
-    "/projects/Sync-Assistants/images/sync (2).jpg",
-    "/projects/Sync-Assistants/images/sync (3).jpg",
-    "/projects/Sync-Assistants/images/Sync.jpg"
+    "/projects/Sync-Assistants/images/rhenda_1920x1080 (1).png",
+    "/projects/Sync-Assistants/images/rhenda_1920x1080.png",
+    "/projects/Sync-Assistants/images/sync_assistant_1920x1080 (1).png",
+    "/projects/Sync-Assistants/images/sync_assistant_1920x1080.png"
   ],
   "tera-organics": [
     "/projects/tera-organics/images/cover.png",
-    "/projects/tera-organics/images/danny-greenberg-gTT6fpD8gms-unsplash.jpg",
-    "/projects/tera-organics/images/hero-bg copy 3.jpg",
-    "/projects/tera-organics/images/hero-bg copy.jpg",
-    "/projects/tera-organics/images/hero-bg.jpg",
-    "/projects/tera-organics/images/rodrigo-silva-CSDO2tBJc0E-unsplash.jpg"
+    "/projects/tera-organics/images/tera_organics_1600x1200 (1).png",
+    "/projects/tera-organics/images/tera_organics_1600x1200 (2).png",
+    "/projects/tera-organics/images/tera_organics_1600x1200 (3).png",
+    "/projects/tera-organics/images/tera_organics_1600x1200 (4).png",
+    "/projects/tera-organics/images/tera_organics_1600x1200.png",
+    "/projects/tera-organics/images/tera_organics_1920x1080 (1).png",
+    "/projects/tera-organics/images/tera_organics_1920x1080 (3).png",
+    "/projects/tera-organics/images/tera_organics_1920x1080 (4).png",
+    "/projects/tera-organics/images/tera_organics_1920x1080 (5).png",
+    "/projects/tera-organics/images/tera_organics_1920x1080 (6).png",
+    "/projects/tera-organics/images/tera_organics_1920x1080 (7).png",
+    "/projects/tera-organics/images/tera_organics_1920x1080.png"
   ]
 }
