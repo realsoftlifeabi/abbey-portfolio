@@ -1,6 +1,6 @@
-const chokidar = require('chokidar');
-const path = require('path');
-const { copyAllImagesAndGenerateMap } = require('../lib/copyProjectAssets.js');
+import chokidar from 'chokidar';
+import path from 'path';
+import { copyAllImagesAndGenerateMap } from '../lib/copyProjectAssets.js';
 
 console.log('🚀 Starting project file watcher...');
 
@@ -13,9 +13,7 @@ let regenerateTimeout = null;
 
 function watchProjectFiles() {
   // Watch only image files, not the imageMap.json to prevent loops
-  const watcher = chokidar.watch([
-    path.join(projectsDir, '*/images/**/*')
-  ], {
+  const watcher = chokidar.watch([path.join(projectsDir, '*/images/**/*')], {
     ignoreInitial: true,
     persistent: true,
   });
@@ -39,17 +37,17 @@ function handleFileChange(filePath) {
   try {
     const relativePath = path.relative(process.cwd(), filePath);
     console.log(`📝 File changed: ${relativePath}`);
-    
+
     // Clear any pending regeneration
     if (regenerateTimeout) {
       clearTimeout(regenerateTimeout);
     }
-    
+
     // Debounce rapid changes (300ms)
     regenerateTimeout = setTimeout(() => {
       if (!isRegenerating) {
         isRegenerating = true;
-        
+
         // Regenerate image assets
         console.log('🖼️  Regenerating image assets...');
         copyAllImagesAndGenerateMap()

@@ -95,7 +95,7 @@ export function CaseStudies({ projects }: CaseStudiesProps) {
             asChild
             size="lg"
             variant="outline"
-            className="border-2 border-liftoff-blue text-liftoff-blue hover:bg-liftoff-blue/10"
+            className="border-2 border-liftoff-blue text-liftoff-blue dark:text-white hover:bg-liftoff-blue/10"
           >
             <Link href="/portfolio">
               View All Case Studies

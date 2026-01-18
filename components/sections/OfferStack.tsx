@@ -148,7 +148,7 @@ export function OfferStack() {
                       asChild
                       className={
                         offer.featured
-                          ? 'bg-liftoff-blue hover:bg-liftoff-blue/90 w-full'
+                          ? 'bg-liftoff-blue hover:bg-liftoff-blue/90 text-white w-full'
                           : 'w-full'
                       }
                       variant={offer.featured ? 'default' : 'outline'}
@@ -173,7 +173,7 @@ export function OfferStack() {
           <p className="text-muted-foreground mb-4">
             Questions about timeline, tech stack, or pricing?
           </p>
-          <Button asChild variant="link" className="text-liftoff-blue">
+          <Button asChild variant="link" className="text-liftoff-blue dark:text-white">
             <Link href="#faq">View FAQs →</Link>
           </Button>
         </motion.div>

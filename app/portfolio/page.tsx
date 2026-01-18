@@ -18,8 +18,8 @@ export default async function PortfolioPage() {
               Launch Sprint Portfolio
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              From fintech to AI dashboards—explore case studies showcasing strategy-backed design,
-              production-grade Next.js builds, and measurable outcomes.
+              From fintech to AI dashboards—explore portfolio projects showcasing strategy-backed
+              design, production-grade Next.js builds, and measurable outcomes.
             </p>
           </div>
         </section>

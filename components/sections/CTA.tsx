@@ -46,7 +46,7 @@ export function CTA() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-liftoff-blue text-liftoff-blue hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
+              className="border-2 border-liftoff-blue text-liftoff-blue dark:text-white hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
             >
               <Link href="mailto:assistant.abbey@gmail.com">
                 <Mail className="w-5 h-5 mr-2" />

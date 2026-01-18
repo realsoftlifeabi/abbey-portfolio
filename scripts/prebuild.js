@@ -1,4 +1,4 @@
-const { copyAllImagesAndGenerateMap } = require('../lib/copyProjectAssets.js');
+import { copyAllImagesAndGenerateMap } from '../lib/copyProjectAssets.js';
 
 copyAllImagesAndGenerateMap()
   .then(() => {

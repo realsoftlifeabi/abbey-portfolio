@@ -49,7 +49,7 @@ export function Hero() {
         >
           {/* Badge */}
           <motion.div variants={staggerItem} className="flex justify-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-liftoff-blue/10 border border-liftoff-blue/20 text-liftoff-blue dark:bg-liftoff-blue/20 dark:border-liftoff-blue/30">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-liftoff-blue/10 border border-liftoff-blue/20 text-liftoff-blue dark:bg-liftoff-blue/20 dark:border-liftoff-blue/30 dark:text-white">
               <Rocket className="w-4 h-4" />
               <span className="text-sm font-medium">Available for Projects</span>
             </div>
@@ -109,7 +109,7 @@ export function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-liftoff-blue text-liftoff-blue hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
+              className="border-2 border-liftoff-blue text-liftoff-blue dark:text-white hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
             >
               <Link href="/portfolio">View My Work</Link>
             </Button>
