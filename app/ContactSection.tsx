@@ -34,7 +34,7 @@ export const ContactSection = () => (
     <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-32">
       <div className="text-center mb-16">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[--liftoff-blue] to-[--liftoff-orange] bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[--liftoff-blue] to-[--liftoff-orange] bg-clip-text text-transparent dark:bg-none dark:bg-clip-border dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -43,7 +43,7 @@ export const ContactSection = () => (
           Let&apos;s Build Something Amazing Together
         </motion.h2>
         <motion.p
-          className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12"
+          className="text-xl text-muted-foreground dark:text-white/80 max-w-3xl mx-auto leading-relaxed mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -132,10 +132,15 @@ export const ContactSection = () => (
         transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}
       >
-        <p className="text-sm text-muted-foreground mb-6">
+        <p className="text-sm text-muted-foreground dark:text-white/80 mb-6">
           Ready to start your project? Let&apos;s discuss how I can help bring your ideas to life.
         </p>
-        <Button variant="liftoff" size="lg" asChild>
+        <Button
+          variant="liftoff"
+          size="lg"
+          className="shadow-lg shadow-[--liftoff-blue]/25 hover:shadow-xl hover:shadow-[--liftoff-orange]/30 transition-all duration-300 dark:bg-[linear-gradient(to_right,var(--liftoff-blue),var(--liftoff-orange))] dark:shadow-white/10 dark:hover:shadow-white/20"
+          asChild
+        >
           <Link href="https://wa.me/2348091565803" target="_blank">
             Get Started Now
           </Link>
