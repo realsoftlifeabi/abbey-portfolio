@@ -43,7 +43,7 @@ export default function Content({ project }: { project: Project }) {
         {/* Hero Section */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-[--liftoff-blue]/5 to-[--liftoff-orange]/5" />
-          <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-20">
+          <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20">
             {meta.coverImage && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -54,7 +54,9 @@ export default function Content({ project }: { project: Project }) {
                 <AnimatedImage
                   src={`/projects/${project.slug}${meta.coverImage}`}
                   alt={`${meta.title} Cover`}
-                  className="rounded-2xl shadow-2xl w-full max-h-[70vh] object-contain"
+                  className="rounded-2xl shadow-2xl w-full max-w-5xl mx-auto object-contain"
+                  width={1200}
+                  height={800}
                 />
               </motion.div>
             )}

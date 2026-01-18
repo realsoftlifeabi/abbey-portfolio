@@ -1,5 +1,6 @@
 'use client';
 
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image, { ImageProps } from 'next/image';
 import { useState } from 'react';
@@ -20,6 +21,17 @@ export const AnimatedImage = ({
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Fallback timeout to ensure image doesn't stay in loading state forever
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (isLoading) {
+        setIsLoading(false);
+      }
+    }, 3000); // 3 seconds fallback
+
+    return () => clearTimeout(timer);
+  }, [isLoading]);
+
   if (typeof src !== 'string' || (!src.startsWith('/') && !src.startsWith('http'))) {
     console.warn('Invalid image src:', src);
     return null;
@@ -39,10 +51,11 @@ export const AnimatedImage = ({
           alt={alt}
           width={width}
           height={height}
-          className={`w-full h-auto object-cover transition-all duration-700 ease-in-out ${
+          className={`w-full h-auto object-contain transition-all duration-700 ease-in-out ${
             isLoading ? 'blur-md scale-105' : 'blur-0 scale-100'
           } ${className}`}
-          sizes="(max-width: 768px) 100vw, 700px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1200px"
+          priority={true}
           onLoad={() => setIsLoading(false)}
           onError={() => {
             setHasError(true);
