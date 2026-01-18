@@ -135,20 +135,18 @@
   display: none; /* Chrome, Safari */
 }
 
+/* Enhanced Gallery Styles */
 .pswp-gallery {
-  overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  height: 200px;
-}
-
-.pswp-gallery img {
-  height: 100%;
-  object-fit: cover;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .pswp-gallery::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
+}
+
+.pswp-gallery .pswp__item {
+  scroll-snap-align: center;
 }
 
 @layer base {
@@ -179,12 +177,27 @@
 
   .header-gradient {
     background: linear-gradient(135deg, #2563eb 0%, #ea580c 50%, #2563eb 100%) !important;
+    background: linear-gradient(
+      135deg,
+      var(--liftoff-blue) 0%,
+      var(--liftoff-orange) 50%,
+      var(--liftoff-blue) 100%
+    ) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     color: transparent !important;
     background-size: 200% 200% !important;
     animation: gradient-shift 3s ease-in-out infinite !important;
+  }
+
+  .logo-gradient {
+    background: linear-gradient(135deg, #2563eb 0%, #ea580c 100%) !important;
+    background: linear-gradient(
+      135deg,
+      var(--liftoff-blue) 0%,
+      var(--liftoff-orange) 100%
+    ) !important;
   }
 
   @keyframes gradient-shift {

@@ -37,7 +37,7 @@ export default function Header() {
       <div className="flex items-center justify-between max-w-7xl mx-auto px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform">
+          <div className="w-10 h-10 rounded-full logo-gradient flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform">
             AS
           </div>
           <div className="flex flex-col">

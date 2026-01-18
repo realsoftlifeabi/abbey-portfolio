@@ -11,7 +11,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Maximize2 } from 'lucide-react';
+import { useEffect, useRef } from 'react';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
 
 const components: MDXComponents = {
   Image: AnimatedImage,
@@ -39,6 +42,29 @@ const components: MDXComponents = {
 
 export default function Content({ project }: { project: Project }) {
   const meta = project.metadata;
+  const coverImageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!meta.coverImage || !coverImageRef.current) return;
+
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: coverImageRef.current,
+      children: 'a',
+      pswpModule: () => import('photoswipe'),
+      showHideAnimationType: 'zoom',
+      bgOpacity: 0.95,
+      padding: { top: 40, bottom: 40, left: 40, right: 40 },
+      counter: true,
+      arrowPrev: true,
+      arrowNext: true,
+    });
+
+    lightbox.init();
+
+    return () => {
+      lightbox.destroy();
+    };
+  }, [meta.coverImage]);
 
   return (
     <PageLayout>
@@ -70,15 +96,39 @@ export default function Content({ project }: { project: Project }) {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8 }}
                 className="mb-12"
+                ref={coverImageRef}
               >
-                <AnimatedImage
-                  src={`/projects/${project.slug}${meta.coverImage}`}
-                  alt={`${meta.title} Cover`}
-                  className="rounded-2xl shadow-2xl w-full max-w-5xl mx-auto object-contain"
-                  width={1200}
-                  height={800}
-                  fallbackSrc="/placeholder.svg"
-                />
+                <div className="relative group">
+                  <Link
+                    href={`/projects/${project.slug}${meta.coverImage}`}
+                    data-pswp-width={1200}
+                    data-pswp-height={800}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block relative group/cover"
+                  >
+                    <AnimatedImage
+                      src={`/projects/${project.slug}${meta.coverImage}`}
+                      alt={`${meta.title} Cover`}
+                      className="rounded-2xl shadow-2xl w-full max-w-5xl mx-auto object-contain transition-all duration-300"
+                      width={1200}
+                      height={800}
+                      fallbackSrc="/placeholder.svg"
+                    />
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover/cover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
+                      initial={{ opacity: 0 }}
+                      whileHover={{ opacity: 1 }}
+                    />
+                    <motion.div
+                      className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover/cover:opacity-100 transition-all duration-300 shadow-lg border border-border/50"
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      whileHover={{ scale: 1, opacity: 1 }}
+                    >
+                      <Maximize2 className="w-4 h-4 text-foreground" />
+                    </motion.div>
+                  </Link>
+                </div>
               </motion.div>
             )}
 
@@ -191,7 +241,7 @@ export default function Content({ project }: { project: Project }) {
                       transition={{ duration: 0.5, delay: 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <Card className="border-0 bg-gradient-to-br from-[--liftoff-blue]/5 to-[--liftoff-orange]/5">
+                      <Card className="border-0 bg-gradient-to-br from-[--liftoff-blue]/5 to-[--liftoff-orange]/5 dark:from-[--liftoff-blue]/15 dark:to-[--liftoff-orange]/15 dark:border dark:border-border/50">
                         <CardContent className="p-6">
                           <h3 className="capitalize font-semibold mb-4 text-foreground">{key}</h3>
                           <div className="flex flex-wrap gap-2">

@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <Link href="/" className="flex items-center gap-2 group mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-liftoff-blue to-liftoff-orange flex items-center justify-center text-white font-bold text-lg">
+              <div className="w-10 h-10 rounded-full logo-gradient flex items-center justify-center text-white font-bold text-lg">
                 AS
               </div>
               <div className="flex flex-col">

@@ -19,8 +19,7 @@ const buttonVariants = cva(
           'bg-card/50 backdrop-blur-sm text-secondary-foreground hover:bg-card/80 border border-border hover:border-[--liftoff-blue]/30 hover:shadow-md dark:bg-card/30 dark:hover:bg-card/50',
         ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
-        liftoff:
-          'bg-gradient-to-r from-blue-600 to-orange-500 text-white border-0 shadow-lg hover:shadow-xl hover:scale-105 hover:from-blue-700 hover:to-orange-600',
+        liftoff: 'logo-gradient text-white border-0 shadow-lg hover:shadow-xl hover:scale-105',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',

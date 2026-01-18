@@ -73,7 +73,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center max-w-4xl w-full"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 leading-tight bg-gradient-to-r from-gray-200 via-gray-100 to-white text-transparent bg-clip-text">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 leading-tight header-gradient">
             Sanni Abiodun
           </h1>
 
@@ -105,8 +105,9 @@ export function HeroSection() {
           <div className="mb-12">
             <Button
               asChild
+              variant="liftoff"
               size="lg"
-              className="px-8 py-5 text-base rounded-full bg-white hover:bg-gray-200 text-black hover:scale-105 transition-transform shadow-md"
+              className="px-8 py-5 text-base rounded-full shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300"
             >
               <Link href="#contact">Let&apos;s Collaborate</Link>
             </Button>
