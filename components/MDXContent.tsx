@@ -1,3 +1,5 @@
+'use client';
+
 import { MDXComponents, Project } from '@/types/project';
 import { MDXRemote } from 'next-mdx-remote';
 

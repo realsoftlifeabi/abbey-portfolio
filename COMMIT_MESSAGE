@@ -1,0 +1,17 @@
+Implement infinite carousel for ProjectGallery component
+
+- Added infinite scrolling functionality with duplicated items array
+- Implemented smooth auto-scroll with configurable interval and pause on hover
+- Added touch/drag support for manual navigation
+- Enhanced loading states with skeleton placeholders
+- Improved image handling with fixed dimensions (300x240) for consistency
+- Added glassmorphism overlay effects and zoom indicators
+- Optimized performance with proper cleanup and event handlers
+- Maintained responsive design and accessibility features
+
+Changes include:
+- New infiniteItems computed property for seamless looping
+- Auto-scroll mechanism with user interaction detection
+- Enhanced motion variants and animations
+- Improved error handling and loading states
+- Better UX with hover effects and visual feedback
