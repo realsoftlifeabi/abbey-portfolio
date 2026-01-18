@@ -26,7 +26,7 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
               <Link href={`/portfolio/${project.slug}`} className="block">
                 <div className="relative w-full h-60 overflow-hidden">
                   <AnimatedImage
-                    src={`/projects/${project.slug}/images/cover.jpg`}
+                    src={`/projects/${project.slug}${project.metadata.coverImage}`}
                     width={500}
                     height={500}
                     alt={project.metadata.title}

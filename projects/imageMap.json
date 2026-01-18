@@ -1,32 +1,47 @@
 {
   "Awozwa": [
-    "/projects/Awozwa/images/Awozwa (2).jpg",
-    "/projects/Awozwa/images/Awozwa (3).jpg",
-    "/projects/Awozwa/images/cover.jpg"
+    "/projects/Awozwa/images/awozwa_1920x1080 (1).png",
+    "/projects/Awozwa/images/awozwa_1920x1080 (2).png",
+    "/projects/Awozwa/images/awozwa_1920x1080 (3).png",
+    "/projects/Awozwa/images/awozwa_1920x1080.png",
+    "/projects/Awozwa/images/cover.png",
+    "/projects/Awozwa/images/des_1920x1080 (6).png",
+    "/projects/Awozwa/images/des_1920x1080 (7).png"
   ],
   "design-synchrony": [
     "/projects/design-synchrony/images/cover.png",
-    "/projects/design-synchrony/images/mobile 2.png",
-    "/projects/design-synchrony/images/tablet - blog.png",
-    "/projects/design-synchrony/images/tablet - shop.png",
-    "/projects/design-synchrony/images/tablet 2.png",
-    "/projects/design-synchrony/images/tablet3.png"
+    "/projects/design-synchrony/images/des_1920x1080 (2).png",
+    "/projects/design-synchrony/images/des_1920x1080 (4).png",
+    "/projects/design-synchrony/images/des_1920x1080 (5).png",
+    "/projects/design-synchrony/images/des_1920x1080.png",
+    "/projects/design-synchrony/images/fioptions_1920x1080 (16).png",
+    "/projects/design-synchrony/images/fioptions_1920x1080 (17).png",
+    "/projects/design-synchrony/images/fioptions_1920x1080 (18).png",
+    "/projects/design-synchrony/images/fioptions_1920x1080 (19).png",
+    "/projects/design-synchrony/images/fioptions_1920x1080 (20).png"
   ],
   "FI-Options": [
     "/projects/FI-Options/images/cover.png",
-    "/projects/FI-Options/images/iPhone-13-PRO-fioption.vercel.app (1).png",
-    "/projects/FI-Options/images/iPhone-13-PRO-fioption.vercel.app.png",
-    "/projects/FI-Options/images/Screenshot 2026-01-17 182116.png",
-    "/projects/FI-Options/images/Screenshot 2026-01-17 182130.png",
-    "/projects/FI-Options/images/Screenshot 2026-01-17 182141.png",
-    "/projects/FI-Options/images/Screenshot 2026-01-17 182214.png",
-    "/projects/FI-Options/images/Screenshot 2026-01-17 182238.png",
-    "/projects/FI-Options/images/Screenshot 2026-01-17 182326.png"
+    "/projects/FI-Options/images/fioptions_1080x1350 (1).png",
+    "/projects/FI-Options/images/fioptions_1080x1350 (2).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (10).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (12).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (13).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (14).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (5).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (6).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (7).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (8).png",
+    "/projects/FI-Options/images/fioptions_1920x1080 (9).png",
+    "/projects/FI-Options/images/fioptions_1920x1080.png"
   ],
   "Fin-sync": [
-    "/projects/Fin-sync/images/cover.jpg",
-    "/projects/Fin-sync/images/fin-sync2.jpg",
-    "/projects/Fin-sync/images/fin-sync3.jpg"
+    "/projects/Fin-sync/images/awozwa_1920x1080 (5).png",
+    "/projects/Fin-sync/images/cover.png",
+    "/projects/Fin-sync/images/finsync_1920x1080 (1).png",
+    "/projects/Fin-sync/images/finsync_1920x1080 (3).png",
+    "/projects/Fin-sync/images/finsync_1920x1080 (4).png",
+    "/projects/Fin-sync/images/finsync_1920x1080.png"
   ],
   "First-Dailey-H": [
     "/projects/First-Dailey-H/images/cover.png",
@@ -41,10 +56,12 @@
     "/projects/First-Dailey-H/images/untitled_asset_1920x1080.png"
   ],
   "GHL": [
-    "/projects/GHL/images/cover.jpg",
-    "/projects/GHL/images/ghl (2).jpg",
-    "/projects/GHL/images/ghl (3).jpg",
-    "/projects/GHL/images/ghl.jpg"
+    "/projects/GHL/images/cover.png",
+    "/projects/GHL/images/first_dailey_1920x1080 (12).png",
+    "/projects/GHL/images/first_dailey_1920x1080 (13).png",
+    "/projects/GHL/images/ghl_1920x1080 (1).png",
+    "/projects/GHL/images/ghl_1920x1080 (2).png",
+    "/projects/GHL/images/ghl_1920x1080.png"
   ],
   "GlassCasa": [
     "/projects/GlassCasa/images/cover.jpg",

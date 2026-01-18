@@ -54,7 +54,7 @@ export function CaseStudies({ projects }: CaseStudiesProps) {
                 <Card className="h-full hover:shadow-xl transition-all duration-300 border border-border overflow-hidden group">
                   <div className="relative w-full h-64 overflow-hidden bg-muted">
                     <AnimatedImage
-                      src={`/projects/${project.slug}/images/cover.jpg`}
+                      src={`/projects/${project.slug}${project.metadata.coverImage}`}
                       width={600}
                       height={400}
                       alt={project.metadata.title}
