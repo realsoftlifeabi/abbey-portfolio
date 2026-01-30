@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Rocket, Zap, CheckCircle } from 'lucide-react';
 import { staggerContainer, staggerItem } from '@/lib/motion-variants';
+import { getContactConfig } from '@/lib/contact-config';
 
 export function Hero() {
   const proofChips = [
@@ -13,6 +14,8 @@ export function Hero() {
     'Founder of LiftOff',
     'Full-Stack Expertise',
   ];
+
+  const config = getContactConfig();
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -60,7 +63,7 @@ export function Hero() {
             variants={staggerItem}
             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-tight"
           >
-            Hi, I&apos;m Abiodun Sanni
+            Hi, I&apos;m {config.upworkProfileName}
             <br />
             <span className="title-gradient">Product Designer & Developer</span>
           </motion.h1>

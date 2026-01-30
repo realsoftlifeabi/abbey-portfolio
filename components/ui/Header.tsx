@@ -43,7 +43,9 @@ export default function Header() {
             AS
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-bold text-foreground">Abiodun Sanni</span>
+            <span className="text-lg font-bold text-foreground">
+              {contactConfig.upworkProfileName || 'Abiodun Sanni'}
+            </span>
             <span className="text-xs text-muted-foreground">Product Designer & Developer</span>
           </div>
         </Link>

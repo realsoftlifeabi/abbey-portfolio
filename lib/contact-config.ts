@@ -15,41 +15,25 @@ export interface ContactConfig {
   contactSectionSubheading: string;
 }
 
-// Default configuration (full contact details)
-export const defaultContactConfig: ContactConfig = {
+// Base configuration (without environment variables)
+const baseContactConfig = (
+  isUpworkMode: boolean,
+): Omit<
+  ContactConfig,
+  | 'upworkProfileUrl'
+  | 'upworkProfileName'
+  | 'contactButtonText'
+  | 'contactSectionHeading'
+  | 'contactSectionSubheading'
+> => ({
   showContactDetails: true,
-  showWhatsApp: true,
-  showEmail: true,
+  showWhatsApp: !isUpworkMode,
+  showEmail: !isUpworkMode,
   showPhone: false,
-  showDirectContact: true,
+  showDirectContact: !isUpworkMode,
   whatsappNumber: '2348091565803',
   emailAddress: 'assistant.abbey@gmail.com',
-  upworkProfileUrl:
-    process.env.NEXT_PUBLIC_UPWORK_PROFILE_URL ||
-    'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share',
-  upworkProfileName: process.env.NEXT_PUBLIC_UPWORK_PROFILE_NAME || 'Abiodun Sanni',
-  contactButtonText: 'Get In Touch',
-  contactSectionHeading: "Let's Build Something Amazing Together",
-  contactSectionSubheading:
-    "Whether it's a modern web app, intuitive UI, or AI-powered product — I'm here to help bring your vision to life with clean code and exceptional design.",
-};
-
-// Upwork-safe configuration (no direct contact details)
-export const upworkContactConfig: ContactConfig = {
-  showContactDetails: true,
-  showWhatsApp: false,
-  showEmail: false,
-  showPhone: false,
-  showDirectContact: false,
-  upworkProfileUrl:
-    process.env.NEXT_PUBLIC_UPWORK_PROFILE_URL ||
-    'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share',
-  upworkProfileName: process.env.NEXT_PUBLIC_UPWORK_PROFILE_NAME || 'Abiodun Sanni',
-  contactButtonText: 'View on Upwork',
-  contactSectionHeading: "Let's Build Something Amazing Together",
-  contactSectionSubheading:
-    "Whether it's a modern web app, intuitive UI, or AI-powered product — I'm here to help bring your vision to life with clean code and exceptional design.",
-};
+});
 
 // Helper to check if current build is Upwork-safe variant
 export const isUpwork = (): boolean => process.env.NEXT_PUBLIC_DEPLOYMENT_TYPE === 'upwork';
@@ -57,12 +41,36 @@ export const isUpwork = (): boolean => process.env.NEXT_PUBLIC_DEPLOYMENT_TYPE =
 // Get contact configuration based on environment
 export const getContactConfig = (): ContactConfig => {
   const isUpworkVersion = isUpwork();
+
+  // Read environment variables dynamically
+  const upworkProfileUrl =
+    process.env.NEXT_PUBLIC_UPWORK_PROFILE_URL ||
+    'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share';
+
+  const upworkProfileName = process.env.NEXT_PUBLIC_UPWORK_PROFILE_NAME || 'Abiodun Sanni';
+
   if (isUpworkVersion) {
-    return upworkContactConfig;
+    return {
+      ...baseContactConfig(true),
+      upworkProfileUrl,
+      upworkProfileName,
+      contactButtonText: 'View on Upwork',
+      contactSectionHeading: "Let's Build Something Amazing Together",
+      contactSectionSubheading:
+        "Whether it's a modern web app, intuitive UI, or AI-powered product — I'm here to help bring your vision to life with clean code and exceptional design.",
+    };
   }
 
   // Non-Upwork: use defaults (WhatsApp/Email visible, phone hidden, direct contact enabled)
-  return defaultContactConfig;
+  return {
+    ...baseContactConfig(false),
+    upworkProfileUrl,
+    upworkProfileName,
+    contactButtonText: 'Get In Touch',
+    contactSectionHeading: "Let's Build Something Amazing Together",
+    contactSectionSubheading:
+      "Whether it's a modern web app, intuitive UI, or AI-powered product — I'm here to help bring your vision to life with clean code and exceptional design.",
+  };
 };
 
 // Helper function to check if contact methods should be shown

@@ -4,10 +4,23 @@ import Link from 'next/link';
 import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
 import { getContactConfig, isUpwork } from '@/lib/contact-config';
 
+// Helper function to get initials from name
+const getInitials = (name: string) => {
+  if (!name) return 'AS';
+  return name
+    .split(' ')
+    .map((part) => part[0])
+    .join('')
+    .toUpperCase()
+    .substring(0, 2);
+};
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const upworkMode = isUpwork();
   const contactConfig = getContactConfig();
+  const profileName = contactConfig.upworkProfileName || 'Abiodun Sanni';
+  const initials = getInitials(profileName);
 
   const footerLinks = {
     services: [
@@ -35,10 +48,12 @@ export default function Footer() {
           <div className="col-span-1">
             <Link href="/" className="flex items-center gap-2 group mb-4">
               <div className="w-10 h-10 rounded-full logo-gradient flex items-center justify-center text-white font-bold text-lg">
-                AS
+                {initials}
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground">Abiodun Sanni</span>
+                <span className="text-lg font-bold text-foreground">
+                  {contactConfig.upworkProfileName || 'Abiodun Sanni'}
+                </span>
                 <span className="text-xs text-muted-foreground">Product Designer & Developer</span>
               </div>
             </Link>
@@ -130,7 +145,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Abiodun Sanni. All rights reserved.
+            &copy; {currentYear} {contactConfig.upworkProfileName || 'Abiodun Sanni'}. All rights
+            reserved.
           </p>
           <div className="flex gap-6">
             <span className="text-xs text-muted-foreground">Built with Next.js + Tailwind</span>
