@@ -61,11 +61,15 @@ export const getContactConfig = (): ContactConfig => {
     };
   }
 
-  // Non-Upwork: use defaults (WhatsApp/Email visible, phone hidden, direct contact enabled)
+  // Full deployment: Show all contact methods including Upwork profile
   return {
     ...baseContactConfig(false),
     upworkProfileUrl,
     upworkProfileName,
+    // In full deployment, show all contact methods
+    showWhatsApp: true,
+    showEmail: true,
+    showDirectContact: true,
     contactButtonText: 'Get In Touch',
     contactSectionHeading: "Let's Build Something Amazing Together",
     contactSectionSubheading:

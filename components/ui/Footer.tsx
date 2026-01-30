@@ -4,6 +4,13 @@ import Link from 'next/link';
 import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
 import { getContactConfig, isUpwork } from '@/lib/contact-config';
 
+// Custom Upwork icon component
+const UpworkIcon = () => (
+  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.561 13.158c-1.102 0-2.135-.767-3.322-1.543-.338-.222-.653-.416-.93-.558-.463-.234-1.08-.412-1.658-.412-.59 0-1.196.178-1.66.412-.277.142-.592.336-.93.558-1.187.776-2.22 1.543-3.322 1.543-1.102 0-2.135-.767-3.322-1.543-.338-.222-.653-.416-.93-.558-.463-.234-1.08-.412-1.66-.412H0v10.382h1.178c1.102 0 2.135.767 3.322 1.543.338.222.653.416.93.558.463.234 1.08.412 1.66.412.59 0 1.197-.178 1.66-.412.277-.142.592-.336.93-.558 1.187-.776 2.22-1.543 3.322-1.543 1.102 0 2.135.767 3.322 1.543.338.222.653.416.93.558.463.234 1.08.412 1.66.412.59 0 1.197-.178 1.66-.412.277-.142.592-.336.93-.558 1.187-.776 2.22-1.543 3.322-1.543 1.102 0 2.135.767 3.322 1.543.338.222.653.416.93.558.463.234 1.08.412 1.66.412H24V10.645h-1.178c-1.102 0-2.135.767-3.322 1.543-.338.222-.653.416-.93.558-.463.234-1.08.412-1.66.412zM12 6.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13z" />
+  </svg>
+);
+
 // Helper function to get initials from name
 const getInitials = (name: string) => {
   if (!name) return 'AS';
@@ -37,6 +44,15 @@ export default function Footer() {
       { label: 'LinkedIn', href: 'https://linkedin.com/in/abiodun-sanni', icon: Linkedin },
       { label: 'Twitter', href: 'https://twitter.com/abiodun_sanni', icon: Twitter },
       { label: 'GitHub', href: 'https://github.com/abiodun-sanni', icon: Github },
+      ...(contactConfig.upworkProfileUrl
+        ? [
+            {
+              label: 'Upwork',
+              href: contactConfig.upworkProfileUrl,
+              icon: UpworkIcon,
+            },
+          ]
+        : []),
     ],
   };
 
@@ -100,45 +116,44 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-semibold text-foreground mb-4">Get in Touch</h3>
-            {upworkMode ? (
-              <div className="space-y-3">
+            <div className="space-y-3">
+              {contactConfig.upworkProfileUrl && (
                 <a
-                  href={contactConfig.upworkProfileUrl || '#'}
+                  href={contactConfig.upworkProfileUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-liftoff-blue hover:bg-liftoff-blue/90 text-white font-medium rounded-full transition-colors"
+                  className="inline-block px-4 py-2 bg-liftoff-blue hover:bg-liftoff-blue/90 text-white font-medium rounded-full transition-colors mb-2"
                 >
-                  View on Upwork
+                  {upworkMode ? 'View on Upwork' : 'Hire me on Upwork'}
                 </a>
-              </div>
-            ) : (
-              <div className="space-y-3">
+              )}
+              {contactConfig.emailAddress && (
                 <a
-                  href="mailto:assistant.abbey@gmail.com"
+                  href={`mailto:${contactConfig.emailAddress}`}
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>assistant.abbey@gmail.com</span>
+                  <span>{contactConfig.emailAddress}</span>
                 </a>
-                <div className="flex gap-4 mt-4">
-                  {footerLinks.social.map((link) => {
-                    const Icon = link.icon;
-                    return (
-                      <a
-                        key={link.label}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                        aria-label={link.label}
-                      >
-                        <Icon className="w-5 h-5" />
-                      </a>
-                    );
-                  })}
-                </div>
+              )}
+              <div className="flex gap-4 mt-4">
+                {footerLinks.social.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={link.label}
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  );
+                })}
               </div>
-            )}
+            </div>
           </div>
         </div>
 
