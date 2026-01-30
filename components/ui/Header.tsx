@@ -5,11 +5,13 @@ import Link from 'next/link';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { Button } from './button';
+import { getContactConfig, shouldShowContactMethod } from '@/lib/contact-config';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const contactConfig = getContactConfig();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,9 +70,24 @@ export default function Header() {
           </button>
 
           {/* CTA Button */}
-          <Button asChild size="sm" className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white">
-            <Link href="#contact">Get In Touch</Link>
-          </Button>
+          {contactConfig.showContactDetails && (
+            <Button
+              asChild
+              size="sm"
+              className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white"
+            >
+              <Link
+                href={
+                  shouldShowContactMethod('direct')
+                    ? '#contact'
+                    : contactConfig.upworkProfileUrl || '#'
+                }
+                target={shouldShowContactMethod('direct') ? '_self' : '_blank'}
+              >
+                {contactConfig.contactButtonText}
+              </Link>
+            </Button>
+          )}
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -106,11 +123,24 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white w-full">
-              <Link href="#contact" onClick={() => setIsOpen(false)}>
-                Get In Touch
-              </Link>
-            </Button>
+            {contactConfig.showContactDetails && (
+              <Button
+                asChild
+                className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white w-full"
+              >
+                <Link
+                  href={
+                    shouldShowContactMethod('direct')
+                      ? '#contact'
+                      : contactConfig.upworkProfileUrl || '#'
+                  }
+                  target={shouldShowContactMethod('direct') ? '_self' : '_blank'}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {contactConfig.contactButtonText}
+                </Link>
+              </Button>
+            )}
           </div>
         </nav>
       )}
