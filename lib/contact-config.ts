@@ -24,7 +24,7 @@ export const defaultContactConfig: ContactConfig = {
   whatsappNumber: '2348091565803',
   emailAddress: 'assistant.abbey@gmail.com',
   upworkProfileUrl:
-    'https://freelancerprofilenuxt.mesh.prod.platform.usw2.upwork/freelancers/~01db646c42ed34df32?mp_source=share',
+    'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share',
   contactButtonText: 'Get In Touch',
   contactSectionHeading: "Let's Build Something Amazing Together",
   contactSectionSubheading:
@@ -39,7 +39,7 @@ export const upworkContactConfig: ContactConfig = {
   showPhone: false,
   showDirectContact: false,
   upworkProfileUrl:
-    'https://freelancerprofilenuxt.mesh.prod.platform.usw2.upwork/freelancers/~01db646c42ed34df32?mp_source=share',
+    'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share',
   contactButtonText: 'View on Upwork',
   contactSectionHeading: "Let's Build Something Amazing Together",
   contactSectionSubheading:
