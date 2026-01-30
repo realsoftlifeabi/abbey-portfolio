@@ -6,8 +6,12 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Rocket, TrendingUp, FileText, Check } from 'lucide-react';
 import { staggerContainer, staggerItem } from '@/lib/motion-variants';
+import { isUpwork } from '@/lib/contact-config';
 
 export function OfferStack() {
+  if (isUpwork()) {
+    return null;
+  }
   const offers = [
     {
       id: 'sprint',

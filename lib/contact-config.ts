@@ -9,6 +9,7 @@ export interface ContactConfig {
   emailAddress?: string;
   phoneNumber?: string;
   upworkProfileUrl?: string;
+  upworkProfileName?: string;
   contactButtonText: string;
   contactSectionHeading: string;
   contactSectionSubheading: string;
@@ -24,7 +25,9 @@ export const defaultContactConfig: ContactConfig = {
   whatsappNumber: '2348091565803',
   emailAddress: 'assistant.abbey@gmail.com',
   upworkProfileUrl:
+    process.env.NEXT_PUBLIC_UPWORK_PROFILE_URL ||
     'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share',
+  upworkProfileName: process.env.NEXT_PUBLIC_UPWORK_PROFILE_NAME || 'Abiodun Sanni',
   contactButtonText: 'Get In Touch',
   contactSectionHeading: "Let's Build Something Amazing Together",
   contactSectionSubheading:
@@ -39,31 +42,27 @@ export const upworkContactConfig: ContactConfig = {
   showPhone: false,
   showDirectContact: false,
   upworkProfileUrl:
+    process.env.NEXT_PUBLIC_UPWORK_PROFILE_URL ||
     'https://www.upwork.com/freelancers/~01db646c42ed34df32?companyReference=1682767900823359489&mp_source=share',
+  upworkProfileName: process.env.NEXT_PUBLIC_UPWORK_PROFILE_NAME || 'Abiodun Sanni',
   contactButtonText: 'View on Upwork',
   contactSectionHeading: "Let's Build Something Amazing Together",
   contactSectionSubheading:
     "Whether it's a modern web app, intuitive UI, or AI-powered product — I'm here to help bring your vision to life with clean code and exceptional design.",
 };
 
+// Helper to check if current build is Upwork-safe variant
+export const isUpwork = (): boolean => process.env.NEXT_PUBLIC_DEPLOYMENT_TYPE === 'upwork';
+
 // Get contact configuration based on environment
 export const getContactConfig = (): ContactConfig => {
-  const isUpworkVersion = process.env.NEXT_PUBLIC_DEPLOYMENT_TYPE === 'upwork';
-  const showContactDetails = process.env.NEXT_PUBLIC_SHOW_CONTACT_DETAILS !== 'false';
-
+  const isUpworkVersion = isUpwork();
   if (isUpworkVersion) {
     return upworkContactConfig;
   }
 
-  return {
-    ...defaultContactConfig,
-    showContactDetails,
-    showWhatsApp: showContactDetails && process.env.NEXT_PUBLIC_SHOW_WHATSAPP !== 'false',
-    showEmail: showContactDetails && process.env.NEXT_PUBLIC_SHOW_EMAIL !== 'false',
-    showPhone: showContactDetails && process.env.NEXT_PUBLIC_SHOW_PHONE === 'true',
-    showDirectContact:
-      showContactDetails && process.env.NEXT_PUBLIC_SHOW_DIRECT_CONTACT !== 'false',
-  };
+  // Non-Upwork: use defaults (WhatsApp/Email visible, phone hidden, direct contact enabled)
+  return defaultContactConfig;
 };
 
 // Helper function to check if contact methods should be shown

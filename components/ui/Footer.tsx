@@ -2,9 +2,12 @@
 
 import Link from 'next/link';
 import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import { getContactConfig, isUpwork } from '@/lib/contact-config';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const upworkMode = isUpwork();
+  const contactConfig = getContactConfig();
 
   const footerLinks = {
     services: [
@@ -82,32 +85,45 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-semibold text-foreground mb-4">Get in Touch</h3>
-            <div className="space-y-3">
-              <a
-                href="mailto:assistant.abbey@gmail.com"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                <span>assistant.abbey@gmail.com</span>
-              </a>
-              <div className="flex gap-4 mt-4">
-                {footerLinks.social.map((link) => {
-                  const Icon = link.icon;
-                  return (
-                    <a
-                      key={link.label}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                      aria-label={link.label}
-                    >
-                      <Icon className="w-5 h-5" />
-                    </a>
-                  );
-                })}
+            {upworkMode ? (
+              <div className="space-y-3">
+                <a
+                  href={contactConfig.upworkProfileUrl || '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 bg-liftoff-blue hover:bg-liftoff-blue/90 text-white font-medium rounded-full transition-colors"
+                >
+                  View on Upwork
+                </a>
               </div>
-            </div>
+            ) : (
+              <div className="space-y-3">
+                <a
+                  href="mailto:assistant.abbey@gmail.com"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span>assistant.abbey@gmail.com</span>
+                </a>
+                <div className="flex gap-4 mt-4">
+                  {footerLinks.social.map((link) => {
+                    const Icon = link.icon;
+                    return (
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label={link.label}
+                      >
+                        <Icon className="w-5 h-5" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

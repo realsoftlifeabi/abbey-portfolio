@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Rocket, Mail, MessageCircle } from 'lucide-react';
 import { fadeInUp } from '@/lib/motion-variants';
+import { getContactConfig, isUpwork } from '@/lib/contact-config';
 
 export function CTA() {
+  const config = getContactConfig();
   return (
     <section
       id="contact"
@@ -32,27 +34,41 @@ export function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button
-              asChild
-              size="lg"
-              className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white px-8 py-6 text-lg rounded-full shadow-lg"
-            >
-              <Link href="https://wa.me/2348091565803" target="_blank">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Me
-              </Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-liftoff-blue text-liftoff-blue dark:text-white hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
-            >
-              <Link href="mailto:assistant.abbey@gmail.com">
-                <Mail className="w-5 h-5 mr-2" />
-                Email Me
-              </Link>
-            </Button>
+            {isUpwork() ? (
+              <Button
+                asChild
+                size="lg"
+                className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white px-8 py-6 text-lg rounded-full shadow-lg"
+              >
+                <Link href={config.upworkProfileUrl || '#'} target="_blank">
+                  View on Upwork
+                </Link>
+              </Button>
+            ) : (
+              <>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-liftoff-blue hover:bg-liftoff-blue/90 text-white px-8 py-6 text-lg rounded-full shadow-lg"
+                >
+                  <Link href="https://wa.me/2348091565803" target="_blank">
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    WhatsApp Me
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-liftoff-blue text-liftoff-blue dark:text-white hover:bg-liftoff-blue/10 px-8 py-6 text-lg rounded-full"
+                >
+                  <Link href="mailto:assistant.abbey@gmail.com">
+                    <Mail className="w-5 h-5 mr-2" />
+                    Email Me
+                  </Link>
+                </Button>
+              </>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
