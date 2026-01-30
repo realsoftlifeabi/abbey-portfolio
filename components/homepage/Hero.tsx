@@ -2,42 +2,10 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Button } from '@/components/ui/button';
 
-const terminalLines = [
-  '$ npm run build',
-  '✓ Compiled successfully in 1.2s',
-  '$ git push origin main',
-  '✓ Changes pushed to GitHub',
-  '$ deploying...',
-  '✓ App live at https://abiodun.dev',
-];
-
 export function HeroSection() {
-  const [typedLines, setTypedLines] = useState<string[]>([]);
-  const [currentLineIndex, setCurrentLineIndex] = useState(0);
-  const terminalRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (currentLineIndex < terminalLines.length) {
-      const timeout = setTimeout(() => {
-        setTypedLines((prev) => [...prev, terminalLines[currentLineIndex]]);
-        setCurrentLineIndex((prev) => prev + 1);
-      }, 2000);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [currentLineIndex]);
-
-  useEffect(() => {
-    terminalRef.current?.scrollTo({
-      top: terminalRef.current.scrollHeight,
-      behavior: 'smooth',
-    });
-  }, [typedLines]);
-
   return (
     <div
       className="relative w-full h-[95vh] max-h-[600px] flex items-center justify-center bg-cover bg-center rounded-b-4xl overflow-hidden"
